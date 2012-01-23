@@ -16,6 +16,18 @@
     }
   });
 
+  test("set saves data, get gets saved data, remove removes data", function() {
+    storage.set("data", { name: "stored_value" });
+
+    var data = storage.get("data");
+    equal(data.name, "stored_value", "correct data gotten");
+
+    storage.remove("data");
+
+    data = storage.get("data");
+    equal(typeof data.name, "undefined", "data was removed, cannot load");
+  });
+
   test("getEmails with no emails", function() {
     var emails = storage.getEmails();
 

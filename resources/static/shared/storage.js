@@ -176,7 +176,26 @@ BrowserID.Storage = (function() {
     delete allInfo[key];
     storage.managePage = JSON.stringify(allInfo);
   }
+
+
+  function get(key) {
+    var loadedData = storage[key] !== null && JSON.parse(storage[key]);
+    return loadedData;
+  }
+
+  function set(key, data) {
+    storage[key] = JSON.stringify(data);
+  }
+
+  function remove(key) {
+    storage.removeItem(key);
+  }
+
   return {
+    get: get,
+    set: set,
+    remove: remove,
+
     /**
      * Add an email address and optional key pair.
      * @method addEmail
