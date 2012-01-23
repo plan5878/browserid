@@ -9,6 +9,8 @@ BrowserID.Models.Profile = (function() {
 
   var Model = bid.Model.extend({
     init: function(config) {
+      config = config || {};
+
       config.storage_key = "profile";
 
       sc.init.call(this, config);

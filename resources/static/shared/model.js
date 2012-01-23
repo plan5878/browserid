@@ -17,8 +17,12 @@ BrowserID.Model = (function() {
       var self=this,
           storageKey = config.storage_key;
 
-      if(storageKey) {
-        self.storageKey = storageKey;
+      self.storageKey = storageKey;
+
+      if(config.data) {
+        self.data = config.data;
+      }
+      else if(storageKey) {
         self.data = storage.get(storageKey);
       }
 

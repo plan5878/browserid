@@ -157,6 +157,13 @@ BrowserID.Modules.Actions = (function() {
 
     doEmailChosen: function(info) {
       startService("email_chosen", info);
+    },
+
+    doProfile: function(info) {
+      var model = bid.Models.Profile.create();
+      var uploader = bid.Modules.PhotoUploader.create();
+
+      startService("profile", { model: model, uploader: uploader });
     }
   });
 

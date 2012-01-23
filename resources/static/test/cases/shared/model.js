@@ -70,6 +70,17 @@
     equal(data.field1, "value1", "data retreived");
   });
 
+  test("create with data ignores data in storage backing", function() {
+    var modelWithData = Model.create({
+      storage_key: "model",
+      data: {
+        loadedField: "loadedValue"
+      }
+    });
+
+    equal(modelWithData.get("loadedField"), "loadedValue", "data loaded from config data");
+  });
+
 }());
 
 

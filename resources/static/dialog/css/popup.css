@@ -387,3 +387,42 @@ a.emphasize {
     text-align: center;
 }
 
+.profile input[type=text],
+.profile input[type=email] {
+  width: 200px;
+}
+
+.profile input + label {
+  display: none;
+}
+
+.profile p {
+  line-height: 52px;
+/*  margin-top: 10px;*/
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  margin-right: 3px;
+  cursor: pointer;
+  /*float: left;*/
+  line-height: 23px;
+  text-align: center;
+  background: white;
+  color: #999;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profile input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 85px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+
