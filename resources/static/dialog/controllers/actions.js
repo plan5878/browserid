@@ -112,17 +112,18 @@ BrowserID.Modules.Actions = (function() {
       // yay!  now we need to produce an assertion.
       user.getAssertion(info.email, user.getOrigin(), function(assertion) {
         self.publish("assertion_generated", {
-          assertion: assertion
+          assertion: assertion,
+          focus: true
         });
       }, self.getErrorDialog(errors.getAssertion));
     },
 
-    doAssertionGenerated: function(assertion) {
+    doAssertionGenerated: function(info) {
       // Clear onerror before the call to onsuccess - the code to onsuccess
       // calls window.close, which would trigger the onerror callback if we
       // tried this afterwards.
       onerror = null;
-      if(onsuccess) onsuccess(assertion);
+      if(onsuccess) onsuccess(info);
     },
 
     doNotMe: function() {
