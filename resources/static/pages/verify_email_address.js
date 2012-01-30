@@ -40,28 +40,22 @@ BrowserID.verifyEmailAddress = (function() {
   }
 
   function submit(oncomplete) {
-    var pass = dom.getInner("#password"),
-        vpass = dom.getInner("#vpassword");
+    var pass = localStorage.NEW_ACCOUNT_PASSWORD;
 
-    var valid = bid.Validation.passwordAndValidationPassword(pass, vpass);
-
-    if (valid) {
-      network.completeUserRegistration(token, pass, function(registered) {
-        if (redirectTo && registered) {
-          // XXX How can we get this localStorage stuff out of here?
-          localStorage.removeItem("redirectTo");
-          doc.location = redirectTo;
-          oncomplete();
-        }
-        else {
-          var selector = registered ? "#congrats" : "#cannotcomplete";
-          pageHelpers.replaceFormWithNotice(selector, oncomplete);
-        }
-      }, pageHelpers.getFailure(errors.completeUserRegistration, oncomplete));
-    }
-    else {
-      oncomplete();
-    }
+    network.completeUserRegistration(token, pass, function(registered) {
+      // XXX How can we get this localStorage stuff out of here?
+      localStorage.removeItem("NEW_ACCOUNT_PASSWORD");
+      if (redirectTo && registered) {
+        localStorage.removeItem("redirectTo");
+        window.alert("You are now registered with BrowserID, but the original site you tried signing into is closed.  You will now be redirected to the site and will have to sign in again.");
+        doc.location = redirectTo;
+        oncomplete();
+      }
+      else {
+        var selector = registered ? "#congrats" : "#cannotcomplete";
+        pageHelpers.replaceFormWithNotice(selector, oncomplete);
+      }
+    }, pageHelpers.getFailure(errors.completeUserRegistration, oncomplete));
   }
 
   var Module = bid.Modules.PageModule.extend({
@@ -81,6 +75,7 @@ BrowserID.verifyEmailAddress = (function() {
 
       showSiteInfo();
       showEmailAddress(complete.curry(options.ready));
+      self.submit();
     },
 
     submit: submit

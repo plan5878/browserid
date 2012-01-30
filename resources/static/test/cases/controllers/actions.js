@@ -10,7 +10,8 @@
       user = bid.User,
       controller,
       el,
-      testHelpers = bid.TestHelpers;
+      testHelpers = bid.TestHelpers,
+      register = testHelpers.register;
 
   function createController(config) {
     controller = BrowserID.Modules.Actions.create();
@@ -141,17 +142,33 @@
     });
   });
 
-  asyncTest("doConfirmUser - start the check_registration service", function() {
+  asyncTest("doConfirmSecondaryUser - start the check_registration service", function() {
     createController({
       ready: function() {
         var error;
         try {
-          controller.doConfirmUser({email: "testuser@testuser.com"});
+          controller.doConfirmSecondaryUser({email: "testuser@testuser.com"});
         } catch(e) {
           error = e;
         }
 
         equal(error, "module not registered for check_registration", "correct service started");
+        start();
+      }
+    });
+  });
+
+  asyncTest("doSetPassword - start the set_password service", function() {
+    createController({
+      ready: function() {
+        var error;
+        try {
+          controller.doSetPassword({email: "testuser@testuser.com"});
+        } catch(e) {
+          error = e;
+        }
+
+        equal(error, "module not registered for set_password", "correct service started");
         start();
       }
     });
@@ -169,6 +186,22 @@
 
         equal(error, "module not registered for check_registration", "correct service started");
         start();
+      }
+    });
+
+  });
+
+  asyncTest("doStageSecondaryUser - stages a secondary user", function() {
+    createController({
+      ready: function() {
+        var error;
+
+        register("user_staged", function(msg, info) {
+          equal(info.email, "testuser@testuser.com", "correct email passed to user_staged");
+          start();
+        });
+
+        controller.doStageSecondaryUser({email: "testuser@testuser.com"});
       }
     });
 

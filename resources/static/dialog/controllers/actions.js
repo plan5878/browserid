@@ -75,7 +75,16 @@ BrowserID.Modules.Actions = (function() {
       if(onsuccess) onsuccess(null);
     },
 
-    doConfirmUser: function(info) {
+    doSetPassword: function(info) {
+      startService("set_password", info);
+    },
+
+    doStageSecondaryUser: function(info) {
+      var email = info.email;
+      bid.Helpers.Dialog.createUser.call(this, email);
+    },
+
+    doConfirmSecondaryUser: function(info) {
       startRegCheckService.call(this, info, "waitForUserValidation", "user_confirmed");
     },
 
@@ -100,7 +109,7 @@ BrowserID.Modules.Actions = (function() {
     },
 
     doResetPassword: function(info) {
-      this.doConfirmUser(info.email);
+      this.doConfirmSecondaryUser(info.email);
     },
 
     doConfirmEmail: function(info) {

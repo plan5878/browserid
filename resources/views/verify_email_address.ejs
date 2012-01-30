@@ -19,54 +19,6 @@
 >>>>>>> First go at starting the modified account creation step.
         </ul>
 
-        <form id="signUpForm" class="cf">
-            <p class="hint siteinfo">
-              <%- gettext('To finish signing into <strong class="website"></strong>, pick a password for BrowserID.') %>
-            </p>
-
-            <h1 class="serif">
-              <%= gettext('Last step!') %>
-            </h1>
-
-            <ul class="inputs">
-                <li>
-                    <label class="serif" for="email"><%= gettext('Email Address') %></label>
-                    <input class="youraddress sans" id="email" placeholder="<%= gettext('Your Email') %>" type="email" value="" disabled="disabled" maxlength="254" />
-                </li>
-                <li>
-                    <label class="serif" for="password"><%= gettext('New Password') %></label>
-                    <input class="sans" id="password" placeholder="<%= gettext('Enter a Password') %>" type="password" autofocus maxlength=80 />
-
-                    <div class="tooltip" id="password_required" for="password">
-                      <%= gettext('Password is required.') %>
-                    </div>
-
-                    <div class="tooltip" id="password_length" for="password">
-                      <%= gettext('Password must be between 8 and 80 characters long.') %>
-                    </div>
-                </li>
-                <li>
-                    <label class="serif" for="vpassword"><%= gettext('Verify Password') %></label>
-                    <input class="sans" id="vpassword" placeholder="<%= gettext('Repeat Password') %>" type="password" maxlength=80 />
-
-                    <div class="tooltip" id="vpassword_required" for="vpassword">
-                      <%= gettext('Verification password is required.') %>
-                    </div>
-
-                    <div class="tooltip" id="passwords_no_match" for="vpassword">
-                      <%= gettext('Passwords do not match.') %>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="submit cf">
-                <button>
-                  <%= gettext('Finish and return to') %> <span class="website"></span>
-                </button>
-            </div>
-
-        </form>
-
         <div id="congrats">
             <p class="serif">
               <%- gettext('Thank you for signing up with <strong>BrowserID</strong>. You can now use your <strong>BrowserID</strong> account to <em>Sign In</em> or <em>Sign Up</em> to websites all across the web!')

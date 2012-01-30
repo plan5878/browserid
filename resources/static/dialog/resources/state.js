@@ -89,10 +89,22 @@ BrowserID.State = (function() {
       startState("doAuthenticate", info);
     });
 
+    subscribe("new_user", function(msg, info) {
+      self.newUserEmail = info.email;
+      startState("doSetPassword", info);
+    });
+
+    subscribe("password_set", function(msg, info) {
+      info = info || {};
+      info.email = self.newUserEmail;
+
+      startState("doStageSecondaryUser", info);
+    });
+
     subscribe("user_staged", function(msg, info) {
       self.stagedEmail = info.email;
       info.required = !!requiredEmail;
-      startState("doConfirmUser", info);
+      startState("doConfirmSecondaryUser", info);
     });
 
     subscribe("user_confirmed", function() {

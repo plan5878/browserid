@@ -73,19 +73,30 @@
     equal(actions.called.doOffline, true, "controller is offline");
   });
 
-  test("user_staged - call doConfirmUser", function() {
-    mediator.publish("user_staged", {
-      email: "testuser@testuser.com"
-    });
+  test("new_user - call doSetPassword with correct email", function() {
+    mediator.publish("new_user", { email: "testuser@testuser.com" });
 
-    equal(actions.info.doConfirmUser.email, "testuser@testuser.com", "waiting for email confirmation for testuser@testuser.com");
+    equal(actions.info.doSetPassword.email, "testuser@testuser.com", "correct email sent to doSetPassword");
   });
 
-  test("user_staged with required email - call doConfirmUser with required = true", function() {
+  test("password_set - call doStageSecondaryUser with correct email", function() {
+    mediator.publish("new_user", { email: "testuser@testuser.com" });
+    mediator.publish("password_set");
+
+    equal(actions.info.doStageSecondaryUser.email, "testuser@testuser.com", "correct email sent to doStageSecondaryUser");
+  });
+
+  test("user_staged - call doConfirmSecondaryUser", function() {
+    mediator.publish("user_staged", { email: "testuser@testuser.com" });
+
+    equal(actions.info.doConfirmSecondaryUser.email, "testuser@testuser.com", "waiting for email confirmation for testuser@testuser.com");
+  });
+
+  test("user_staged with required email - call doConfirmSecondaryUser with required = true", function() {
     mediator.publish("start", { requiredEmail: "testuser@testuser.com" });
     mediator.publish("user_staged", { email: "testuser@testuser.com" });
 
-    equal(actions.info.doConfirmUser.required, true, "doConfirmUser called with required flag");
+    equal(actions.info.doConfirmSecondaryUser.required, true, "doConfirmSecondaryUser called with required flag");
   });
 
   test("user_confirmed - call doEmailConfirmed", function() {
