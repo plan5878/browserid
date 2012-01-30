@@ -57,13 +57,11 @@ BrowserID.Modules.Authenticate = (function() {
       if(info.type === "primary") {
         self.close("primary_user", info, info);
       }
-      else {
-        if(info.known) {
-          enterPasswordState.call(self);
-        }
-        else {
-          createSecondaryUser.call(self);
-        }
+      else if(info.known) {
+        enterPasswordState.call(self);
+      } else {
+        self.close("new_user", {email: email});
+        //createSecondaryUserState.call(self);
       }
     }
   }
