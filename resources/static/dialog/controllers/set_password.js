@@ -8,6 +8,7 @@ BrowserID.Modules.SetPassword = (function() {
   var bid = BrowserID,
       dom = bid.DOM,
       complete = bid.Helpers.complete,
+      cancelEvent = bid.Helpers.cancelEvent,
       sc;
 
   function submit(callback) {
@@ -23,11 +24,17 @@ BrowserID.Modules.SetPassword = (function() {
     complete(callback, valid);
   }
 
+  function cancel() {
+    this.close("cancel_state");
+  }
+
   var Module = bid.Modules.PageModule.extend({
     start: function(options) {
       var self=this;
 
       self.renderDialog("set_password");
+
+      self.bind("#cancel", "click", cancelEvent(cancel));
 
       sc.start.call(self, options);
     },
