@@ -290,7 +290,6 @@ BrowserID.State = (function() {
 
       addPrimaryUser = false;
       email = requiredEmail = null;
-
       State.sc.start.call(this, options);
       startStateMachine.call(this);
     }
