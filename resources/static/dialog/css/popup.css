@@ -343,12 +343,26 @@ footer {
     overflow-y: auto;
 }
 
+#set_password .inputs {
+    margin: 1em 0;
+    padding: 0;
+    line-height: 18px;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
 .pickemail .inputs {
     position: relative;
 }
 
 .form_section {
     height: 176px;
+    position: relative;
+}
+
+#set_password.form_section {
+    height: 200px;
+    padding: 0 10px;
     position: relative;
 }
 

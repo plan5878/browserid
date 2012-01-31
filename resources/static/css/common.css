@@ -220,7 +220,7 @@ button[disabled], .submit_disabled button, .submit_disabled .button,
   margin-right: 15px;
 }
 
-a.secondary[disabled], .submit_disabled a.secondary, .submit_disabled a.secondary:focus, .submit_disabled a.secondary:active {
+.submit > a[disabled], .submit_disabled .submit > a, .submit_disabled .submit > a:focus, .submit_disabled .submit > a:active {
   color: #999;
 }
 
