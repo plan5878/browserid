@@ -112,13 +112,8 @@ BrowserID.Modules.Actions = (function() {
       this.doConfirmSecondaryUser(info);
     },
 
-<<<<<<< HEAD
     doConfirmEmail: function(info) {
       startRegCheckService.call(this, info, "waitForEmailValidation", "email_confirmed");
-=======
-    doConfirmEmail: function(email) {
-      startRegCheckService.call(this, email, "waitForEmailValidation", "email_confirmed");
->>>>>>> When clicking "use another email address" after "reset password", send user back to authentication screen.
     },
 
     doEmailConfirmed: function(info) {
