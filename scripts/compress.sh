@@ -78,8 +78,6 @@ echo ''
 cd $PRODUCTION_PATH
 
 pwd
-<<<<<<< HEAD
-=======
 # minify the JS
 $UGLIFY < $BUILD_PATH/include.uncompressed.js > include.js
 for locale in $locales; do
@@ -87,7 +85,7 @@ for locale in $locales; do
     $UGLIFY < $BUILD_PATH/$locale/dialog.uncompressed.js > $locale/dialog.js
     $UGLIFY < $BUILD_PATH/$locale/browserid.uncompressed.js > $locale/browserid.js
 done
->>>>>>> Fixing UGLIFYCSS check and directory creation bug
+
 $UGLIFY < $BUILD_PATH/communication_iframe.uncompressed.js > communication_iframe.js
 
 
