@@ -76,7 +76,7 @@ BrowserID.Modules.Authenticate = (function() {
       self.close("new_user", {email: email});
       //dialogHelpers.createUser.call(self, email, callback);
     } else {
-      callback && callback();
+      complete(callback);
     }
   }
 

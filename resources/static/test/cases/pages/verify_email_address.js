@@ -17,7 +17,7 @@
       config = {
         token: "token"
       },
-      docMock;
+      winMock;
 
   module("pages/verify_email_address", {
     setup: function() {
@@ -31,33 +31,21 @@
   });
 
   function createController(options, callback) {
-    docMock = new WindowMock().document;
+    winMock = new WindowMock();
     controller = BrowserID.verifyEmailAddress.create();
     options = options || {};
-    options.document = docMock;
+    options.window = winMock;
+    options.document = winMock.document;
     options.ready = callback;
     controller.start(options);
   }
 
-  asyncTest("verifyEmailAddress with good token and site", function() {
+  asyncTest("verifyEmailAddress with good token and sit to redirect to - immediately submit, redirect user", function() {
+    localStorage.redirectTo = "http://redirect.to";
     storage.setStagedOnBehalfOf("browserid.org");
 
     createController({ token: "token" }, function() {
-      equal($("#email").val(), "testuser@testuser.com", "email set");
-      ok($(".siteinfo").is(":visible"), "siteinfo is visible when we say what it is");
-      equal($(".website:nth(0)").text(), "browserid.org", "origin is updated");
-      start();
-    });
-  });
-
-  asyncTest("verifyEmailAddress with good token and nosite", function() {
-    $(".siteinfo").hide();
-    storage.setStagedOnBehalfOf("");
-
-    createController({ token: "token" }, function() {
-      equal($("#email").val(), "testuser@testuser.com", "email set");
-      equal($(".siteinfo").is(":visible"), false, "siteinfo is not visible without having it");
-      equal($(".siteinfo .website").text(), "", "origin is not updated");
+      equal(winMock.document.location, "http://redirect.to");
       start();
     });
   });
@@ -79,6 +67,7 @@
     });
   });
 
+  /*
   asyncTest("submit with good token, missing password", function() {
     createController({ token: "token" }, function() {
       $("#password").val("");
@@ -116,7 +105,7 @@
       });
     });
   });
-
+*/
   asyncTest("submit with good token, both passwords, no redirect - show congrats", function() {
     createController({ token: "token" }, function() {
       $("#password").val("password");
@@ -136,7 +125,7 @@
       $("#vpassword").val("password");
 
       controller.submit(function() {
-        equal(docMock.location, "redirect_url", "document redirected to redirect_url");
+        equal(winMock.document.location, "redirect_url", "document redirected to redirect_url");
         equal(localStorage.redirectTo, null, "redirectTo has been cleared");
         start();
       });

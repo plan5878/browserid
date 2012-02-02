@@ -13,7 +13,8 @@ BrowserID.verifyEmailAddress = (function() {
       pageHelpers = bid.PageHelpers,
       helpers = bid.Helpers,
       complete = helpers.complete,
-      doc,
+      win = window,
+      doc = document,
       token,
       redirectTo,
       sc;
@@ -31,7 +32,7 @@ BrowserID.verifyEmailAddress = (function() {
     network.emailForVerificationToken(token, function(info) {
       if (info) {
         dom.setInner('#email', info.email);
-        oncomplete();
+        complete(oncomplete);
       }
       else {
         pageHelpers.replaceFormWithNotice("#cannotconfirm", oncomplete);
@@ -47,9 +48,9 @@ BrowserID.verifyEmailAddress = (function() {
       localStorage.removeItem("NEW_ACCOUNT_PASSWORD");
       if (redirectTo && registered) {
         localStorage.removeItem("redirectTo");
-        window.alert("You are now registered with BrowserID, but the original site you tried signing into is closed.  You will now be redirected to the site and will have to sign in again.");
+        win.alert("You are now registered with BrowserID, but the original site you tried signing into is closed.  You will now be redirected to the site and will have to sign in again.");
         doc.location = redirectTo;
-        oncomplete();
+        complete(oncomplete);
       }
       else {
         var selector = registered ? "#congrats" : "#cannotcomplete";
@@ -66,6 +67,7 @@ BrowserID.verifyEmailAddress = (function() {
 
       token = options.token;
       doc = options.document || window.document;
+      win = options.window || window;
 
       // Save this off early because if the user is not logged in, the storage
       // info will be cleared by time they hit submit.
@@ -74,8 +76,8 @@ BrowserID.verifyEmailAddress = (function() {
       sc.start.call(self, options);
 
       showSiteInfo();
-      showEmailAddress(complete.curry(options.ready));
-      self.submit();
+      showEmailAddress();
+      self.submit(options.ready);
     },
 
     submit: submit

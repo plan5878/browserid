@@ -19,6 +19,9 @@ BrowserID.Mocks.WindowMock = (function() {
   WindowMock.prototype = {
     open: function(url, name, options) {
       this.open_url = url;
+    },
+    alert: function(msg) {
+      this.alert_msg = msg;
     }
   };
 
