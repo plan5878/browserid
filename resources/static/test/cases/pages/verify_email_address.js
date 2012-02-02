@@ -119,13 +119,13 @@
   });
 
   asyncTest("submit with good token, both passwords, with redirect - set document.location", function() {
-    localStorage.redirectTo = "redirect_url";
+    localStorage.redirectTo = "http://redirect.to";
     createController({ token: "token" }, function() {
       $("#password").val("password");
       $("#vpassword").val("password");
 
       controller.submit(function() {
-        equal(winMock.document.location, "redirect_url", "document redirected to redirect_url");
+        equal(winMock.document.location, "http://redirect.to", "document redirected to http://redirect.to");
         equal(localStorage.redirectTo, null, "redirectTo has been cleared");
         start();
       });
