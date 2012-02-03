@@ -13,6 +13,7 @@ BrowserID.Screens = (function() {
   function Screen(target, className) {
     return {
       show: function(template, vars) {
+        vars = vars || {};
         renderer.render(target + " .contents", template, vars);
         dom.addClass(BODY, className);
         this.visible = true;
@@ -28,6 +29,7 @@ BrowserID.Screens = (function() {
 
   return {
     form: new Screen("#formWrap", "form"),
+    fullscreen: new Screen("#fullscreen", "fullscreen"),
     wait: new Screen("#wait", "waiting"),
     error: new Screen("#error", "error"),
     delay: new Screen("#delay", "delay")

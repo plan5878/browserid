@@ -268,13 +268,9 @@ BrowserID.State = (function() {
     });
 
     subscribe("email_confirmed", function() {
-<<<<<<< HEAD
       var email = self.stagedEmail;
       self.stagedEmail = null;
       startState("doEmailConfirmed", { email: email });
-=======
-      startState("doEmailConfirmed", { email: self.stagedEmail} );
->>>>>>> Show a "cancel" link instead of "and use another email" in wait for verification screen for required email.
     });
 
     subscribe("cancel_state", function(msg, info) {
@@ -294,10 +290,6 @@ BrowserID.State = (function() {
 
       addPrimaryUser = false;
       email = requiredEmail = null;
-<<<<<<< HEAD
-=======
-
->>>>>>> Show a "cancel" link instead of "and use another email" in wait for verification screen for required email.
       State.sc.start.call(this, options);
       startStateMachine.call(this);
     }

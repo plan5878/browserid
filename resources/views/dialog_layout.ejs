@@ -23,6 +23,11 @@
   <title><%= gettext('BrowserID') %></title>
 </head>
   <body class="waiting">
+      <div id="fullscreen">
+        <div class="contents">
+        </div>
+      </div>
+
       <div id="wrapper">
           <header id="header" class="cf">
               <ul>
@@ -113,6 +118,7 @@
           <script src="/dialog/controllers/primary_user_provisioned.js"></script>
           <script src="/dialog/controllers/email_chosen.js"></script>
           <script src="/dialog/controllers/set_password.js"></script>
+          <script src="/dialog/controllers/convert_account.js"></script>
           <script src="/dialog/start.js"></script>
         <% } %>
       <% } %>

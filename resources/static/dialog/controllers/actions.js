@@ -80,6 +80,7 @@ BrowserID.Modules.Actions = (function() {
     },
 
     doStageSecondaryUser: function(info) {
+      localStorage.NEW_ACCOUNT_PASSWORD = info.password;
       var email = info.email;
       bid.Helpers.Dialog.createUser.call(this, email);
     },

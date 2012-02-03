@@ -130,6 +130,7 @@ BrowserID.Modules.Dialog = (function() {
         // XXX Perhaps put this into the state machine.
         self.bind(win, "unload", onWindowUnload);
 
+        /*
         if(hash.indexOf("#CREATE_EMAIL=") === 0) {
           var email = hash.replace(/#CREATE_EMAIL=/, "");
           params.type = "primary";
@@ -143,13 +144,8 @@ BrowserID.Modules.Dialog = (function() {
           params.add = true;
         }
 
-        /*
-        if(hash.indexOf("REQUIRED=true") > -1) {
-          params.requiredEmail = params.email;
-        }
-        */
-
         self.publish("start", params);
+        */
       }
     }
 

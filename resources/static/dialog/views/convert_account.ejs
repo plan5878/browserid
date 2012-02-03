@@ -1,0 +1,106 @@
+
+  <header>
+    <div>
+      <img src="/i/netflix_logo.png" alt="Netflix Logo" id="rp_logo" />
+      <img src="/i/convert_arrow.png" alt="Conversion Arrow" id="convert_arrow" />
+      <img src="/i/mozilla_persona_logo.png" alt="Mozilla Persona" id="persona_logo" />
+    </div>
+
+    <hgroup>
+      <h1>
+        Netflix is changing how you sign in.
+      </h1>
+
+      <h2>
+        A Mozilla Persona account lets you sign into sites all over the web with one password.
+      </h2>
+    </hgroup>
+  </header>
+
+  <form novalidate>
+    <div>
+      <label for="email">Email</label>
+      <label for="password">Password</label>
+    </div>
+
+    <div>
+      <input type="email" autocapitalize="off" autocorrect="off" name="email" id="email" placeholder="email" />
+
+      <div id="email_format" class="tooltip" for="email">
+        <%= gettext('This field must be an email address.') %>
+      </div>
+
+      <div id="email_required" class="tooltip" for="email">
+        <%= gettext('The email field is required.') %>
+      </div>
+
+      <div id="could_not_add" class="tooltip" for="email">
+        <%= gettext('We just sent an email to that address! If you really want to send another, wait a minute or two and try again.') %>
+      </div>
+
+      <div id="already_registered" class="tooltip" for="email">
+        That email address is already registered!  You should try again.
+      </div>
+
+      <input type="password" autocapitalize="off" autocorrect="off" name="password" id="password" placeholder="create new password" />
+
+      <div class="tooltip" id="password_required" for="password">
+        <%= gettext('Password is required.') %>
+      </div>
+
+      <div class="tooltip" id="password_length" for="password">
+        <%= gettext('Password must be between 8 and 80 characters long.') %>
+      </div>
+
+      <button>create account</button>
+    </div>
+  </form>
+
+  <footer>
+    <a href="#" id="learn_more">
+      It&#39;s safe, fast and free. Learn more <img src="/i/down_arrow.png" />
+    </a>
+  </footer>
+
+  <div id="about">
+
+      <div class="video">
+        <div class="description">
+          <b>BrowserID</b> is an <b>easier</b> way to sign in
+        </div>
+      </div>
+
+      <div class="row one cf">
+          <img src="/i/tutorial_1.png">
+          <div>
+              <div class="steps"></div> On your favorite website that supports BrowserID, Click the &lsquo;Sign In&rsquo; button
+          </div>
+      </div>
+
+      <hr />
+
+      <div class="row two cf">
+          <img src="/i/tutorial_2.png">
+          <div>
+              <div class="steps"></div> Select your preferred Email
+          </div>
+
+      </div>
+
+      <hr />
+
+      <div class="row three cf">
+          <img src="/i/tutorial_3.png">
+          <div>
+              <div class="steps"></div> No passwords necessary, you're done!
+          </div>
+      </div>
+
+      <hr />
+
+      <div class="row cf sumo">
+          If you need some help with BrowserID, head over to our <a href="https://support.mozilla.com/en-US/kb/what-browserid-and-how-does-it-work" target="_blank">support center</a>.
+      </div>
+  </div>
+
+

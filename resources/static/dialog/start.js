@@ -41,11 +41,13 @@
             moduleManager.register("xhr_delay", modules.XHRDelay);
             moduleManager.register("xhr_disable_form", modules.XHRDisableForm);
             moduleManager.register("set_password", modules.SetPassword);
+            moduleManager.register("convert_account", modules.ConvertAccount);
 
 
             moduleManager.start("xhr_delay");
             moduleManager.start("xhr_disable_form");
             moduleManager.start("dialog");
+            moduleManager.start("convert_account");
           }
         }
       });
