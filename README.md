@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-Here lives the [BrowserID] implementation.  BrowserID is an implementation of the 
+Here lives the [BrowserID] implementation.  BrowserID is an implementation of the
 [verified email protocol].
 
   [BrowserID]:https://browserid.org
