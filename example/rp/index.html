@@ -103,19 +103,23 @@ $(document).ready(function() {
     var requiredEmail = $.trim($('#requiredEmail').val());
     if (!requiredEmail.length) requiredEmail = undefined;
 
-    navigator.id.get(function(assertion) {
-      if (!assertion) {
-        $(".assertion pre").text("navigator.id.get() returns NULL");
-      } else {
-        $(".assertion pre").text(assertion);
-        checkAssertion(assertion);
-      }
-    }, {
+    navigator.id.get({
       silent: $('#silent').attr('checked'),
       allowPersistent: $('#allowPersistent').attr('checked'),
       requiredEmail: requiredEmail
     });
   });
+});
+
+$(window).bind("login", function(event) {
+  var assertion = event.assertion;
+  if (!assertion) {
+    $(".assertion pre").text("navigator.id.get() returns NULL");
+  } else {
+    $(".assertion pre").text(assertion);
+    checkAssertion(assertion);
+  }
+
 });
 
 </script>

@@ -9,6 +9,8 @@ BrowserID.verifyEmailAddress = (function() {
   var bid = BrowserID,
       dom = bid.DOM,
       network = bid.Network,
+      storage = bid.Storage,
+      user = bid.User,
       errors = bid.Errors,
       pageHelpers = bid.PageHelpers,
       helpers = bid.Helpers,
@@ -16,12 +18,15 @@ BrowserID.verifyEmailAddress = (function() {
       win = window,
       doc = document,
       token,
+      email,
+      staged,
+      origin,
       redirectTo,
       sc;
 
   function showSiteInfo() {
     $(".siteinfo").hide();
-    var staged = bid.Storage.getStagedOnBehalfOf();
+    staged = storage.getStagedOnBehalfOf();
     if (staged) {
       dom.setInner('.website', staged);
       $('.siteinfo').show();
@@ -31,7 +36,8 @@ BrowserID.verifyEmailAddress = (function() {
   function showEmailAddress(oncomplete) {
     network.emailForVerificationToken(token, function(info) {
       if (info) {
-        dom.setInner('#email', info.email);
+        email = info.email;
+        dom.setInner('#email', email);
         complete(oncomplete);
       }
       else {
@@ -46,11 +52,22 @@ BrowserID.verifyEmailAddress = (function() {
     network.completeUserRegistration(token, pass, function(registered) {
       // XXX How can we get this localStorage stuff out of here?
       localStorage.removeItem("NEW_ACCOUNT_PASSWORD");
+
       if (redirectTo && registered) {
-        localStorage.removeItem("redirectTo");
-        win.alert("You are now registered with BrowserID, but the original site you tried signing into is closed.  You will now be redirected to the site and will have to sign in again.");
-        doc.location = redirectTo;
-        complete(oncomplete);
+        // set the persistent token so when we redirect, the user is logged in.
+        user.syncEmails(function() {
+          user.syncEmailKeypair(email, function(status) {
+
+            storage.site.set(origin, "email", email);
+            storage.site.set(origin, "remember", true);
+
+            localStorage.removeItem("origin");
+            localStorage.removeItem("redirectTo");
+            win.alert("You are now registered with BrowserID, but the original site you tried signing into is closed.  You will now be redirected to the site and will have to sign in again.");
+            doc.location = redirectTo;
+            complete(oncomplete);
+          });
+        });
       }
       else {
         var selector = registered ? "#congrats" : "#cannotcomplete";
@@ -71,6 +88,7 @@ BrowserID.verifyEmailAddress = (function() {
 
       // Save this off early because if the user is not logged in, the storage
       // info will be cleared by time they hit submit.
+      origin = localStorage.origin;
       redirectTo = localStorage.redirectTo;
 
       sc.start.call(self, options);

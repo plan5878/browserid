@@ -109,7 +109,7 @@ BrowserID.Modules.Actions = (function() {
     },
 
     doResetPassword: function(info) {
-      this.doConfirmSecondaryUser(info.email);
+      this.doConfirmSecondaryUser(info);
     },
 
     doConfirmEmail: function(info) {
