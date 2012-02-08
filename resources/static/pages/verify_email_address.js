@@ -63,7 +63,7 @@ BrowserID.verifyEmailAddress = (function() {
 
             localStorage.removeItem("origin");
             localStorage.removeItem("redirectTo");
-            win.alert("You are now registered with BrowserID, but the original site you tried signing into is closed.  You will now be redirected to the site and will have to sign in again.");
+            win.alert("You are now registered with BrowserID, but the original site you tried signing into is closed.  You will now be redirected to the site and may have to sign in again.");
             doc.location = redirectTo;
             complete(oncomplete);
           });
