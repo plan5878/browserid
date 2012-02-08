@@ -41,6 +41,7 @@ BrowserID.State = (function() {
 
       self.hostname = info.hostname;
       self.allowPersistent = !!info.allowPersistent;
+      self.href = info.href;
       requiredEmail = info.requiredEmail;
 
       if ((typeof(requiredEmail) !== "undefined") && (!bid.verifyEmail(requiredEmail))) {
@@ -62,9 +63,8 @@ BrowserID.State = (function() {
 
     subscribe("window_unload", function() {
       if (!self.success) {
-        //storage.setStagedOnBehalfOf("");
         if(self.stagedEmail) {
-          localStorage.redirectTo = user.getOrigin();
+          localStorage.redirectTo = self.href;
         }
         startState("doCancel");
       }

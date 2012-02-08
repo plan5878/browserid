@@ -923,6 +923,9 @@
         throw "navigator.id.get() requires a callback argument";
       }
 
+      options = options || {};
+      options.href = document.location.href;
+
       if (options && options.silent) {
         _noninteractiveCall('getPersistentAssertion', { }, function(rv) {
           callback(rv);
