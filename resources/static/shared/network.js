@@ -7,7 +7,6 @@ BrowserID.Network = (function() {
   "use strict";
 
   var bid = BrowserID,
-      complete = bid.Helpers.complete,
       context,
       server_time,
       domain_key_creation_time,
@@ -19,6 +18,14 @@ BrowserID.Network = (function() {
       xhr = bid.XHR,
       post = xhr.post,
       get = xhr.get;
+
+  function complete() {
+     var args = [].slice.call(arguments, 0);
+
+     setTimeout(function() {
+       bid.Helpers.complete.apply(null, args);
+     }, 0);
+  }
 
   function onContextChange(msg, result) {
     context = result;
@@ -161,7 +168,7 @@ BrowserID.Network = (function() {
             complete(onComplete);
           }
           else {
-            onFailure && onFailure(info);
+            complete(onFailure, info);
           }
         }
       });

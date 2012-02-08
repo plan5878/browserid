@@ -14,6 +14,10 @@ BrowserID.Models.Profile = (function() {
       config.storage_key = "profile";
 
       sc.init.call(this, config);
+    },
+    defaults: {
+      photo: "",
+      name: ""
     }
   });
 

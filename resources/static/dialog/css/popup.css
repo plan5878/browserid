@@ -321,8 +321,10 @@ footer {
     margin: 1em 0 .5em;
     padding: 0 1em;
     line-height: 18px;
+    /*
     max-height: 130px;
     overflow-y: auto;
+    */
 }
 
 .pickemail .inputs {
@@ -387,14 +389,18 @@ a.emphasize {
     text-align: center;
 }
 
-.profile input[type=text],
-.profile input[type=email] {
-  width: 200px;
-}
-
 .profile input + label {
   display: none;
 }
+
+#signIn .vertical .profile ul li {
+  padding-left: 20px;
+}
+
+#signIn .vertical .profile ul li input[type=checkbox] {
+  margin-left: -20px;
+}
+
 
 .profile p {
   line-height: 52px;

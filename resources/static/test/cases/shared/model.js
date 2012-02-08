@@ -81,6 +81,23 @@
     equal(modelWithData.get("loadedField"), "loadedValue", "data loaded from config data");
   });
 
+  test("create with defaults - insert default values if data not given", function() {
+    var ModelWithDefaults = Model.extend({
+      defaults: {
+        field1: "value1",
+        field2: "value2"
+      }
+    });
+
+    var model = ModelWithDefaults.create({
+      data: {
+        field2: "alternate value"
+      }
+    });
+
+    equal(model.get("field1"), "value1", "default value used");
+    equal(model.get("field2"), "alternate value", "alternate value used");
+  });
 }());
 
 

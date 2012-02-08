@@ -179,8 +179,17 @@ BrowserID.Storage = (function() {
 
 
   function get(key) {
-    var loadedData = storage[key] !== null && JSON.parse(storage[key]);
-    return loadedData;
+    var data;
+
+    try {
+      var stored = storage.getItem(key);
+      data = stored !== null ? JSON.parse(stored) : undefined;
+    }
+    catch(e) {
+      // do nothing - data is undefined.
+    }
+
+    return data;
   }
 
   function set(key, data) {

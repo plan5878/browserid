@@ -27,6 +27,15 @@ BrowserID.Model = (function() {
       }
 
       self.data = self.data || {};
+
+      // XXX - why not use AFrame for this?!
+      if(self.defaults) {
+        for(var key in self.defaults) {
+          if(typeof self.get(key) === "undefined") {
+            self.set(key, self.defaults[key]);
+          }
+        }
+      }
     },
 
     destroy: function() {

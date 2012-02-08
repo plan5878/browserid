@@ -25,7 +25,7 @@
     storage.remove("data");
 
     data = storage.get("data");
-    equal(typeof data.name, "undefined", "data was removed, cannot load");
+    equal(typeof data, "undefined", "data was removed, cannot load");
   });
 
   test("getEmails with no emails", function() {
