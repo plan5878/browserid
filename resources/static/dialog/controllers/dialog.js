@@ -143,9 +143,9 @@ BrowserID.Modules.Dialog = (function() {
           params.email = email;
           params.add = true;
         }
+        */
 
         self.publish("start", params);
-        */
       }
     }
 

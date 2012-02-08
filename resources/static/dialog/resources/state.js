@@ -44,6 +44,8 @@ BrowserID.State = (function() {
       self.href = info.href;
       requiredEmail = info.requiredEmail;
 
+      moduleManager.start("convert_account");
+      /*
       if ((typeof(requiredEmail) !== "undefined") && (!bid.verifyEmail(requiredEmail))) {
         // Invalid format
         startState("doError", "invalid_required_email", {email: requiredEmail});
@@ -55,6 +57,7 @@ BrowserID.State = (function() {
       else {
         startState("doCheckAuth");
       }
+      */
     });
 
     subscribe("cancel", function() {
@@ -92,7 +95,10 @@ BrowserID.State = (function() {
 
     subscribe("new_user", function(msg, info) {
       self.newUserEmail = info.email;
+      startState("doStageSecondaryUser", info);
+      /*
       startState("doSetPassword", info);
+      */
     });
 
     subscribe("password_set", function(msg, info) {

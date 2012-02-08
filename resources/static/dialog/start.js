@@ -47,7 +47,6 @@
             moduleManager.start("xhr_delay");
             moduleManager.start("xhr_disable_form");
             moduleManager.start("dialog");
-            moduleManager.start("convert_account");
           }
         }
       });
