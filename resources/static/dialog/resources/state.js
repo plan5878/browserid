@@ -65,6 +65,7 @@ BrowserID.State = (function() {
       if (!self.success) {
         if(self.stagedEmail) {
           localStorage.redirectTo = self.href;
+          localStorage.origin = user.getOrigin();
         }
         startState("doCancel");
       }

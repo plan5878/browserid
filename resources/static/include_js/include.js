@@ -919,8 +919,19 @@
     var w;
 
     navigator.id.get = function(callback, options) {
-      if (typeof callback !== 'function') {
-        throw "navigator.id.get() requires a callback argument";
+      if(typeof callback !== "function") {
+        options = callback;
+        callback = null;
+      }
+
+      function assertionGot(err, rv) {
+        // ignore err!
+        if(!err && rv) {
+          var evt = jQuery.Event("login");
+          evt.assertion = rv || null;
+          $(window).trigger(evt);
+        }
+        if(callback) callback(err ? null : (rv ? rv : null));
       }
 
       options = options || {};
@@ -928,9 +939,9 @@
 
       if (options && options.silent) {
         _noninteractiveCall('getPersistentAssertion', { }, function(rv) {
-          callback(rv);
+          assertionGot(null, rv);
         }, function(e, msg) {
-          callback(null);
+          assertionGot(msg, null);
         });
       } else {
         // focus an existing window
@@ -965,8 +976,7 @@
           w = undefined;
           // ignore err!
           var assertion = r.assertion;
-          callback(err ? null : (assertion ? assertion : null));
-
+          assertionGot(err, assertion);
           if(assertion && r.focus) {
             window.alert("You are now logged in");
           }
@@ -1019,5 +1029,9 @@
 
     navigator.id._getVerifiedEmailIsShimmed = true;
   }
+
+  $(function() {
+    navigator.id.get({silent: true});
+  });
 }());
 
