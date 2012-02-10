@@ -317,4 +317,112 @@ footer .help {
     text-decoration: underline;
 }
 
+#about {
+  font-family: 'Droid Serif', Georgia, serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #444;
+
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  padding: 0 0 50px 0;
+  background-color: #fff;
+
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+       -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+
+  -webkit-border-radius: 0 0 5px 5px;
+     -moz-border-radius: 0 0 5px 5px;
+       -o-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+}
+
+.video {
+  margin: 0 0 25px 0;
+  width: 700px;
+  font-size: 2em;
+  line-height: 1.3em;
+  padding: 1em 2em 1em 2em;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.video img, .video iframe {
+  display: block;
+}
+
+.row {
+  margin: 0 0 25px 0;
+  padding: 25px 50px 0 50px;
+  position: relative;
+}
+
+.row:last-child {
+  margin: 0;
+}
+
+.row h2 {
+  font-size: 21px;
+  font-weight: normal;
+  color: #222;
+  line-height: 32px;
+  display: inline-block;
+}
+
+.row div {
+  height: 140px;
+  width: 500px;
+  padding: 0 0 0 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.row p {
+  width: 380px;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  float: left;
+}
+
+.row img {
+  float: left;
+}
+
+.row button, .row .button {
+  float: right;
+  display: inline-block;
+}
+
+div.steps {
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+  margin-right: 10px;
+  background-image: url('/i/count.png');
+  float: left;
+}
+
+.one .steps {
+  background-position: left 0;
+}
+
+.two .steps {
+  background-position: left -24px;
+}
+
+.three .steps {
+  background-position: left -48px;
+}
+
+.sumo {
+  text-align: center;
+}
+
+.sumo > a {
+  font-weight: bold;
+  color: #444;
+}
+
+
 
