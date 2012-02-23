@@ -179,8 +179,8 @@ section > .contents {
 }
 
 #favicon .vertical {
-    display: block;
-    line-height: 250px;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
