@@ -84,7 +84,7 @@ BrowserID.Modules.Dialog = (function() {
   function setOrigin(origin) {
     console.log(origin);
     user.setOrigin(origin);
-    dom.setInner("#sitename", "netflix.com");
+    dom.setInner("#sitename", user.getHostname());
   }
 
   function onWindowUnload() {

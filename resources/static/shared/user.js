@@ -261,7 +261,7 @@ BrowserID.User = (function() {
      * @returns {string}
      */
     getHostname: function() {
-      return origin.replace(/^.*:\/\//, "").replace(/:\d*$/, "");
+      return "netflix.com";
     },
 
     /**
