@@ -1,0 +1,37 @@
+#!/usr/local/bin/node
+var exec = require('child_process').exec;
+    mongodb = require('mongodb'),
+    cache = require('./lib/cache');
+
+console.log('STARTED ', new Date());
+process.chdir('/home/app/code/locale/');
+var execErrorOr = function (cb) {
+  return function (error, stdout, stderr) {
+    if (error) {
+      console.error('ERROR: ' + error);
+      console.error(stderr);
+      console.log('FINISHED ', new Date());
+      process.exit(1);
+    }
+    cb(stdout);
+  };
+}
+exec('svn update', execErrorOr(function (stdout) {
+  if (stdout.trim().match(/^At revision [0-9]*.*$/)) {
+    console.log('No new updates');
+    console.log('FINISHED ', new Date());
+    process.exit(0);
+  }
+  // If we were really clever, we could parse stdout and only 
+  // compress-locale.sh for locales that changed...
+  console.log(stdout);
+  exec('./compile-mo.sh .', execErrorOr(function (stdout) {
+    console.log(stdout);
+    exec('./compile-json.sh . ../resources/static/i18n/', execErrorOr(function (stdout) {
+      console.log(stdout);
+      cache.locales(function (err, locales) {
+        //console.log('list locales', locales);
+      });
+    })); // compile-json.sh
+  })); // compile-mo.sh
+})); // svn update
