@@ -1,378 +1,365 @@
-;var json_locale_data = {
-   "client": {
-      "": {
-         "Project-Id-Version": " PACKAGE VERSION",
-         "Report-Msgid-Bugs-To": " ",
-         "POT-Creation-Date": " 2012-02-03 11:43+0100",
-         "PO-Revision-Date": " 2012-02-03 17:21+0200",
-         "Last-Translator": " Matjaž <m@owca.info>",
-         "Language-Team": " LANGUAGE <LL@li.org>",
-         "Language": " sl",
-         "MIME-Version": " 1.0",
-         "Content-Type": " text/plain; charset=UTF-8",
-         "Content-Transfer-Encoding": " 8bit",
-         "Plural-Forms": " nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);",
-         "X-Generator": " Pootle 2.1.6"
+var json_locale_data = {
+   "client" : {
+      "Cancelling User Account" : [
+         null,
+         ""
+      ],
+      "" : {
+         "MIME-Version" : " 1.0",
+         "X-Generator" : " Translate Toolkit 1.9.0",
+         "POT-Creation-Date" : " 2012-01-26 17:37-0800",
+         "Language" : " sl",
+         "Last-Translator" : " FULL NAME <EMAIL@ADDRESS>",
+         "Content-Type" : " text/plain; charset=UTF-8",
+         "PO-Revision-Date" : " YEAR-MO-DA HO:MI+ZONE",
+         "Language-Team" : " LANGUAGE <LL@li.org>",
+         "Content-Transfer-Encoding" : " 8bit",
+         "Report-Msgid-Bugs-To" : " ",
+         "Project-Id-Version" : " PACKAGE VERSION"
       },
-      "Authenticating User": [
+      "Always sign in using this email" : [
          null,
-         "Preverjanje pristnosti uporabnika"
+         ""
       ],
-      "Adding Address": [
+      "Sync Keys for Address" : [
          null,
-         "Dodajanje naslova"
+         ""
       ],
-      "Adding Primary Email Address to User": [
+      "Syncing Email Addresses" : [
          null,
-         "Dodajanje glavnega e-poštnega naslova uporabniku"
+         ""
       ],
-      "Checking Address Info": [
+      "Unfortunately, BrowserID cannot communicate while offline!" : [
          null,
-         "Preverjanje podatkov o naslovu"
+         ""
       ],
-      "Authenticating with Assertion": [
+      "Sign in using" : [
          null,
-         "Preverjanje pristnosti z izjavo"
+         ""
       ],
-      "Cancelling User Account": [
+      "Relay frame could not be found" : [
          null,
-         "Preklic uporabniškega računa"
+         ""
       ],
-      "Checking Authentication": [
+      "Password" : [
          null,
-         "Preverjanje pristnosti"
+         ""
       ],
-      "Checking Script Version": [
+      "We sent a confirmation email to <strong>%s</strong>" : [
          null,
-         "Preverjanje različice skripta"
+         ""
       ],
-      "Completing User Registration": [
+      "To finish signing in just click the verify link we sent to your email address." : [
          null,
-         "Dokončevanje registracije uporabnika"
+         ""
       ],
-      "We are sorry, BrowserID requires cookies": [
+      "Cancel" : [
          null,
-         "Opravičujemo se, toda BrowserID potrebuje piškote"
+         ""
       ],
-      "BrowserID requires your browser's cookies to be enabled to operate.  Please enable your browser's cookies and try again": [
+      "To verify that you own <strong id='primary_email'>%s</strong>, you must sign in with your provider.  This window will be redirected to" : [
          null,
-         "BrowserID za delovanje potrebuje piškote vašega brskalnika.  Omogočite piškote v vašem brskalniku in poskusite znova"
+         ""
       ],
-      "Checking if Cookies are Enabled": [
+      "Authenticating with Assertion" : [
          null,
-         "Preverjanje, ali so piškoti omogočeni"
+         ""
       ],
-      "Creating Account": [
+      "Reset Password" : [
          null,
-         "Ustvarjanje računa"
+         ""
       ],
-      "Getting Assertion": [
+      "Resetting Password" : [
          null,
-         "Pridobivanje izjave"
+         ""
       ],
-      "Checking Registration Token": [
+      "Logout Failed" : [
          null,
-         "Preverjanje žetona za registracijo"
+         ""
       ],
-      "Checking Email Address": [
+      "Checking Email Address" : [
          null,
-         "Preverjanje e-poštnega naslova"
+         ""
       ],
-      "Checking Whether User is Authenticated with IdP": [
+      "To verify that you own this address, you must sign in with your provider.  This window will be redirected to" : [
          null,
-         "Preverjanje pristnosti uporabnika pri ponudniku identitete"
+         ""
       ],
-      "Logout Failed": [
+      "This is not me..." : [
          null,
-         "Odjava ni uspela"
+         ""
       ],
-      "You are offline!": [
+      "We are sorry, BrowserID requires cookies" : [
          null,
-         "Nimate povezave!"
+         ""
       ],
-      "Unfortunately, BrowserID cannot communicate while offline!": [
+      "In just a moment you'll be signed into BrowserID." : [
          null,
-         "BrowserID na žalost ne deluje, ko nimate povezave!"
+         ""
       ],
-      "Authenticating with Identity Provider": [
+      "Getting Assertion" : [
          null,
-         "Preverjanje pristnosti pri ponudniku identitete"
+         ""
       ],
-      "We had trouble communicating with your email provider, please try again!": [
+      "Completing User Registration" : [
          null,
-         "Pogovor z vašim ponudnikom e-pošte ni uspel. Poskusite znova!"
+         ""
       ],
-      "Provisioning with Identity Provider": [
+      "Registration Failed" : [
          null,
-         "Omogočanje uporabe pri ponudniku identitete"
+         ""
       ],
-      "Provisioning Unsupported Identity Provider": [
+      "This message will go away when the request completes (hopefully soon).  If you wait too long, close this window and try again." : [
          null,
-         "Omogočanje uporabe pri nepodprtem ponudniku identitete"
+         ""
       ],
-      "Unfortunately, the email address provided cannot act as a Primary Identity Provider": [
+      "translated text" : [
          null,
-         "Žal navedeni e-poštni naslov ne more služiti kot glavni ponudnik identitete"
+         ""
       ],
-      "Registration Failed": [
+      "The email field is required." : [
          null,
-         "Registracija ni uspela"
+         ""
       ],
-      "Establishing Relay": [
+      "New email address" : [
          null,
-         "Vzpostavljanje posrednika"
+         ""
       ],
-      "Relay frame could not be found": [
+      "verify email" : [
          null,
-         "Bloka za posredovanje ni bilo mogoče najti"
+         ""
       ],
-      "Resetting Password": [
+      "Checking if Cookies are Enabled" : [
          null,
-         "Ponastavljanje gesla"
+         ""
       ],
-      "Remove Email Address from Account": [
+      "Provisioning Unsupported Identity Provider" : [
          null,
-         "Odstrani e-poštni naslov iz računa"
+         ""
       ],
-      "Setting Password": [
+      "That address is already added to your account!" : [
          null,
-         "Nastavljanje gesla"
+         ""
       ],
-      "Signin Failed": [
+      "Authenticating with Identity Provider" : [
          null,
-         "Prijava ni uspela"
+         ""
       ],
-      "Signup Failed": [
+      "Remove Email Address from Account" : [
          null,
-         "Registracija ni uspela"
+         ""
       ],
-      "Syncing Address": [
+      "Communication Error" : [
          null,
-         "Usklajevanje naslova"
+         ""
       ],
-      "Syncing Email Addresses": [
+      "Provisioning with Identity Provider" : [
          null,
-         "Usklajevanje e-poštnih naslovov"
+         ""
       ],
-      "Sync Keys for Address": [
+      "Adding Address" : [
          null,
-         "Uskladi ključe naslova"
+         ""
       ],
-      "Getting Token Info": [
+      "Check your email!" : [
          null,
-         "Pridobivanje podatkov žetona"
+         ""
       ],
-      "Updating password": [
+      "The site requested you sign in using" : [
          null,
-         "Posodabljanje gesla"
+         ""
       ],
-      "Verifying email address": [
+      "Syncing Address" : [
          null,
-         "Potrjevanje e-poštnega naslova"
+         ""
       ],
-      "Communication Error": [
+      "Use a different email" : [
          null,
-         "Napaka pri pogovoru"
+         ""
       ],
-      "Finishing Sign In...": [
+      "next" : [
          null,
-         "Dokončevanje prijave..."
+         ""
       ],
-      "In just a moment you'll be signed into BrowserID.": [
+      "Verifying email address" : [
          null,
-         "Čez nekaj trenutkov boste prijavljeni v BrowserID."
+         ""
       ],
-      "Please wait a few seconds while we sign you into the site.": [
+      "Signup Failed" : [
          null,
-         "Počakajte nekaj trenutkov, da se prijava na stran konča."
+         ""
       ],
-      "We are sorry, this request is taking a LOOONG time.": [
+      "This email looks new, so let&apos;s get you set up." : [
          null,
-         "Opravičujemo se, da zahteva traja TAKOOO dolgo."
+         ""
       ],
-      "This message will go away when the request completes (hopefully soon). If you wait too long, close this window and try again.": [
+      "Checking Script Version" : [
          null,
-         "To sporočilo bo odstranjeno, ko se bo zahteva končala (upajmo, da kmalu). Če čakate predolgo, zaprite okno in poskusite znova."
+         ""
       ],
-      "Sign in using": [
+      "You are offline!" : [
          null,
-         "Prijava"
+         ""
       ],
-      "New email address": [
+      "Unfortunately, the email address provided cannot act as a Primary Identity Provider" : [
          null,
-         "Nov e-poštni naslov"
+         ""
       ],
-      "This field must be an email address.": [
+      "Checking Authentication" : [
          null,
-         "V to polje morate vnesti e-poštni naslov."
+         ""
       ],
-      "The email field is required.": [
+      "Getting Token Info" : [
          null,
-         "Polje z e-pošto je obvezno."
+         ""
       ],
-      "We just sent an email to that address! If you really want to send another, wait a minute or two and try again.": [
+      "forgot your password?" : [
          null,
-         "Pravkar smo poslali e-poštno sporočilo na ta naslov! Če res želite poslati še enega, počakajte minuto ali dve in poskusite znova."
+         ""
       ],
-      "That address is already added to your account!": [
+      "Address Verified!" : [
          null,
-         "Ta naslov je že bil dodan v vaš račun!"
+         ""
       ],
-      "add": [
+      "This field must be an email address." : [
          null,
-         "dodaj"
+         ""
       ],
-      "cancel": [
+      "We are sorry, but we cannot communicate with BrowserID while you are offline." : [
          null,
-         "prekliči"
+         ""
       ],
-      "Email": [
+      "Authenticating User" : [
          null,
-         "E-pošta"
+         ""
       ],
-      "Enter your email address to sign in to <strong>%s</strong>": [
+      "This email looks new, so let&#39;s get you set up." : [
          null,
-         "Vnesite vaš e-poštni naslov za prijavo na <strong>%s</strong>"
+         ""
       ],
-      "Welcome to BrowserID!": [
+      "Email" : [
          null,
-         "Pozdravljeni v BrowserID!"
+         ""
       ],
-      "This email looks new, so let&#39;s get you set up.": [
+      "Setting Password" : [
          null,
-         "Ta e-poštni naslov je nov, zato ga moramo najprej nastaviti."
+         ""
       ],
-      "Password": [
+      "Finishing Sign In..." : [
          null,
-         "Geslo"
+         ""
       ],
-      "forgot your password?": [
+      "select email" : [
          null,
-         "ste pozabili geslo?"
+         ""
       ],
-      "The password field is required.": [
+      "Checking Address Info" : [
          null,
-         "Polje z geslom je obvezno."
+         ""
       ],
-      "The account cannot be logged in with this username and password.": [
+      "Adding Primary Email Address to User" : [
          null,
-         "Računa s tem uporabniškim imenom in geslom ni mogoče prijaviti."
+         ""
       ],
-      "next": [
+      "Your identity has been verified with your email provider, we will now try to sign you in." : [
          null,
-         "naprej"
+         ""
       ],
-      "verify email": [
+      "Verify With Email Provider" : [
          null,
-         "potrdi naslov"
+         ""
       ],
-      "select email": [
+      "Checking Whether User is Authenticated with IdP" : [
          null,
-         "izberi naslov"
+         ""
       ],
-      "Cannot verify %s": [
+      "Updating password" : [
          null,
-         "Ni mogoče potrditi %s"
+         ""
       ],
-      "%s is a required address, but we cannot verify that you own this address.": [
+      "We just sent an email to that address!  If you really want to send another, wait a minute or two and try again." : [
          null,
-         "%s je zahtevan naslov, vendar ni mogoče preveriti, ali si ga res lastite."
+         ""
       ],
-      "Check your email!": [
+      "The password field is required." : [
          null,
-         "Preverite e-pošto!"
+         ""
       ],
-      "We sent a confirmation email to <strong>%s</strong>": [
+      "cancel" : [
          null,
-         "Poslali smo vam potrditveno e-poštno sporočilo na <strong>%s</strong>"
+         ""
       ],
-      "To finish signing in just click the verify link we sent to your email address.": [
+      "We had trouble communicating with your email provider, please try again!" : [
          null,
-         "Za potrditev prijave kliknite na povezavo, ki smo vam jo poslali na vaš e-poštni naslov."
+         ""
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"cancel\">cancel</a>.": [
+      "Creating Account" : [
          null,
-         "Če gre za napako, prezrite poslano sporočilo in ga <a href=\"#\" id=\"cancel\">prekličite</a>."
+         ""
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"back\">use another email address</a>.": [
+      "We are sorry, this request is taking a LOOONG time." : [
          null,
-         "Če gre za napako, prezrite poslano sporočilo in <a href=\"#\" id=\"back\">uporabite drug e-poštni naslov</a>."
+         ""
       ],
-      "The site requested you sign in using": [
+      "We just sent an email to that address! If you really want to send another, wait a minute or two and try again." : [
          null,
-         "Stran zahteva, da se prijavite kot"
+         ""
       ],
-      "Reset Password": [
+      "BrowserID requires your browser's cookies to be enabled to operate.  Please enable your browser's cookies and try again" : [
          null,
-         "Ponastavi geslo"
+         ""
       ],
-      "Cancel": [
+      "Checking Registration Token" : [
          null,
-         "Prekliči"
+         ""
       ],
-      "*%s* is not a valid email address!": [
+      "add" : [
          null,
-         "*%s* ni veljaven e-poštni naslov!"
+         ""
       ],
-      "To continue, please close the window and enter a valid address.": [
+      "To continue, please close the window and enter a valid address." : [
          null,
-         "Za nadaljevanje zaprite okno in vnesite veljaven naslov."
+         ""
       ],
-      "We are sorry, but we cannot communicate with BrowserID while you are offline.": [
+      "Enter your email address to sign in to <strong>%s</strong>" : [
          null,
-         "Opravičujemo se, toda BrowserID ne deluje, ko nimate povezave."
+         ""
       ],
-      "This is not me...": [
+      "Establishing Relay" : [
          null,
-         "To nisem jaz..."
+         ""
       ],
-      "Use a different email": [
+      "Signin Failed" : [
          null,
-         "Uporabi drug e-poštni naslov"
+         ""
       ],
-      "Always sign in using this email": [
+      "Verify" : [
          null,
-         "Vedno se prijavi s tem e-poštnim naslovom"
+         ""
       ],
-      "sign in": [
+      "sign in" : [
          null,
-         "prijava"
+         ""
       ],
-      "Address Verified!": [
+      "The account cannot be logged in with this username and password." : [
          null,
-         "Naslov potrjen!"
+         ""
       ],
-      "Your identity has been verified with your email provider, we will now try to sign you in.": [
+      "Welcome to BrowserID!" : [
          null,
-         "Vaša identiteta je bila potrjena pri vašem ponudniku e-pošte. Zdaj vas bomo poskusili prijaviti."
+         ""
       ],
-      "You must sign in with your email provider to verify ownership of this address. This window will be redirected to": [
+      "If this is a mistake, just ignore the sent email and <a href=\"#\" class=\"cancelVerify\" id=\"back\">use another email address</a>." : [
          null,
-         "Za potrditev lastništva tega naslova, se morate prijaviti pri svojem ponudniku. To okno bo preusmerjeno na"
+         ""
       ],
-      "Verify": [
+      "*%s* is not a valid email address!" : [
          null,
-         "Potrdi"
+         ""
       ],
-      "Verify With Email Provider": [
+      "Please wait a few seconds while we sign you into the site." : [
          null,
-         "Potrdi s ponudnikom e-pošte"
-      ],
-      "#~ \"We just sent an email to that address!  If you really want to send \"#~ \"another, wait a minute or two and try again.\"": [
-         null,
-         "#~ \"Pravkar smo poslali e-poštno sporočilo na ta naslov!  Če res želite \"#~ \"poslati še enega, počakajte minuto ali dve in poskusite znova.\""
-      ],
-      "This email looks new, so let&apos;s get you set up.": [
-         null,
-         "Ta e-poštni naslov je nov, zato ga moramo najprej nastaviti."
-      ],
-      "#~ \"To verify that you own <strong id='primary_email'>%s</strong>, you must \"#~ \"sign in with your provider.  This window will be redirected to\"": [
-         null,
-         "#~ \"Za potrditev lastništva naslova <strong id='primary_email'>%s</strong>, \"#~ \"se morate prijaviti pri svojem ponudniku.  To okno bo preusmerjeno na\""
-      ],
-      "translated text": [
-         null,
-         "prevedeno besedilo"
+         ""
       ]
    }
 }

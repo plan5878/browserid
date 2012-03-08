@@ -1,377 +1,365 @@
-;var json_locale_data = {
-   "client": {
-      "": {
-         "Project-Id-Version": " PACKAGE VERSION",
-         "Report-Msgid-Bugs-To": " ",
-         "POT-Creation-Date": " 2012-02-03 11:43+0100",
-         "PO-Revision-Date": " 2012-02-03 13:54+0200",
-         "Last-Translator": " Alessio <alessio.gastaldi@libero.it>",
-         "Language-Team": " LANGUAGE <LL@li.org>",
-         "Language": " lij",
-         "MIME-Version": " 1.0",
-         "Content-Type": " text/plain; charset=UTF-8",
-         "Content-Transfer-Encoding": " 8bit",
-         "X-Generator": " Pootle 2.1.6"
+var json_locale_data = {
+   "client" : {
+      "Cancelling User Account" : [
+         null,
+         ""
+      ],
+      "" : {
+         "MIME-Version" : " 1.0",
+         "X-Generator" : " Translate Toolkit 1.9.0",
+         "POT-Creation-Date" : " 2012-01-26 17:37-0800",
+         "Language" : " lij",
+         "Last-Translator" : " FULL NAME <EMAIL@ADDRESS>",
+         "Content-Type" : " text/plain; charset=UTF-8",
+         "PO-Revision-Date" : " YEAR-MO-DA HO:MI+ZONE",
+         "Language-Team" : " LANGUAGE <LL@li.org>",
+         "Content-Transfer-Encoding" : " 8bit",
+         "Report-Msgid-Bugs-To" : " ",
+         "Project-Id-Version" : " PACKAGE VERSION"
       },
-      "Authenticating User": [
+      "Always sign in using this email" : [
          null,
-         "Aotenticaçión de l'ùtente"
+         ""
       ],
-      "Adding Address": [
+      "Sync Keys for Address" : [
          null,
-         "Azónta de l'indirìsso"
+         ""
       ],
-      "Adding Primary Email Address to User": [
+      "Syncing Email Addresses" : [
          null,
-         "Azónta de l'indirìsso email primâio de l'ùtente."
+         ""
       ],
-      "Checking Address Info": [
+      "Unfortunately, BrowserID cannot communicate while offline!" : [
          null,
-         "Contròllo de informaçioìn in sce l'indirìsso"
+         ""
       ],
-      "Authenticating with Assertion": [
+      "Sign in using" : [
          null,
-         "Aotenticaçión con l'aserçión"
+         ""
       ],
-      "Cancelling User Account": [
+      "Relay frame could not be found" : [
          null,
-         "Scancéllo l'account de l'ùtente"
+         ""
       ],
-      "Checking Authentication": [
+      "Password" : [
          null,
-         "Contròllo l'aotenticaçión"
+         ""
       ],
-      "Checking Script Version": [
+      "We sent a confirmation email to <strong>%s</strong>" : [
          null,
-         "Verìfica a versción do script"
+         ""
       ],
-      "Completing User Registration": [
+      "To finish signing in just click the verify link we sent to your email address." : [
          null,
-         "Finìscio a registraçión de l'ùtente"
+         ""
       ],
-      "We are sorry, BrowserID requires cookies": [
+      "Cancel" : [
          null,
-         "Sémmo dispiaxûi ma o BrowserID o veu i cookie"
+         ""
       ],
-      "BrowserID requires your browser's cookies to be enabled to operate.  Please enable your browser's cookies and try again": [
+      "To verify that you own <strong id='primary_email'>%s</strong>, you must sign in with your provider.  This window will be redirected to" : [
          null,
-         "Pe fonçionâ bén o BrowserID o l'à bezéugno che ghe ségge a gestión di cookie atîva in sciô navegatô. Atîvali e prêuva tórna"
+         ""
       ],
-      "Checking if Cookies are Enabled": [
+      "Authenticating with Assertion" : [
          null,
-         "Contròlla se i cookie son atîvi"
+         ""
       ],
-      "Creating Account": [
+      "Reset Password" : [
          null,
-         "Creaçión de l'account"
+         ""
       ],
-      "Getting Assertion": [
+      "Resetting Password" : [
          null,
-         "Riceçión de l'aserçión"
+         ""
       ],
-      "Checking Registration Token": [
+      "Logout Failed" : [
          null,
-         "Contròllo o token de registraçión"
+         ""
       ],
-      "Checking Email Address": [
+      "Checking Email Address" : [
          null,
-         "Contròllo l'indirìsso email"
+         ""
       ],
-      "Checking Whether User is Authenticated with IdP": [
+      "To verify that you own this address, you must sign in with your provider.  This window will be redirected to" : [
          null,
-         "Contòllo se l'ùtente o l'é aotenticòu co-o IdP"
+         ""
       ],
-      "Logout Failed": [
+      "This is not me..." : [
          null,
-         "Disconesción falîa"
+         ""
       ],
-      "You are offline!": [
+      "We are sorry, BrowserID requires cookies" : [
          null,
-         "Ti ê scolegòu!"
+         ""
       ],
-      "Unfortunately, BrowserID cannot communicate while offline!": [
+      "In just a moment you'll be signed into BrowserID." : [
          null,
-         "Pe desfortùnn-a o BrowserID o no l'é in gràddo de comunicâ fintànto che t'ê scolegòu."
+         ""
       ],
-      "Authenticating with Identity Provider": [
+      "Getting Assertion" : [
          null,
-         "Aotenticaçión con Identity Provider"
+         ""
       ],
-      "We had trouble communicating with your email provider, please try again!": [
+      "Completing User Registration" : [
          null,
-         "Niâtri émmo atrovòu in problêma inta comonicaçión co-o fornitô da teu email, pe favô prêuva tórna."
+         ""
       ],
-      "Provisioning with Identity Provider": [
+      "Registration Failed" : [
          null,
-         "Provisioning con l'Identity Provider"
+         ""
       ],
-      "Provisioning Unsupported Identity Provider": [
+      "This message will go away when the request completes (hopefully soon).  If you wait too long, close this window and try again." : [
          null,
-         "Provisioning Identity Provider no soportòu."
+         ""
       ],
-      "Unfortunately, the email address provided cannot act as a Primary Identity Provider": [
+      "translated text" : [
          null,
-         "Pe desfortùnn-a l'indirìsso email che ti me dæto o no peu fonçionâ da l'Identity Provider primâio"
+         ""
       ],
-      "Registration Failed": [
+      "The email field is required." : [
          null,
-         "Registraçión no ariêscia"
+         ""
       ],
-      "Establishing Relay": [
+      "New email address" : [
          null,
-         "Creaçión de relaçoìn"
+         ""
       ],
-      "Relay frame could not be found": [
+      "verify email" : [
          null,
-         "No l'é poscìbile atrovâ o frame d'invîo"
+         ""
       ],
-      "Resetting Password": [
+      "Checking if Cookies are Enabled" : [
          null,
-         "Reinpòsto a paròlla segrétta"
+         ""
       ],
-      "Remove Email Address from Account": [
+      "Provisioning Unsupported Identity Provider" : [
          null,
-         "Rimoçión de l'indirìsso email de l'account"
+         ""
       ],
-      "Setting Password": [
+      "That address is already added to your account!" : [
          null,
-         "Inpostaçión da paròlla segrétta"
+         ""
       ],
-      "Signin Failed": [
+      "Authenticating with Identity Provider" : [
          null,
-         "Acésso no ariêscio"
+         ""
       ],
-      "Signup Failed": [
+      "Remove Email Address from Account" : [
          null,
-         "Registraçión no ariêscia"
+         ""
       ],
-      "Syncing Address": [
+      "Communication Error" : [
          null,
-         "Sincronizaçión de l'indirìsso"
+         ""
       ],
-      "Syncing Email Addresses": [
+      "Provisioning with Identity Provider" : [
          null,
-         "Sincronizaçión de l'indirìsso email"
+         ""
       ],
-      "Sync Keys for Address": [
+      "Adding Address" : [
          null,
-         "Sincronizaçión de ciâvi pe l'indirìsso"
+         ""
       ],
-      "Getting Token Info": [
+      "Check your email!" : [
          null,
-         "Repìggio informaçioìn pe-o token"
+         ""
       ],
-      "Updating password": [
+      "The site requested you sign in using" : [
          null,
-         "Agiórno a paròlla segrétta"
+         ""
       ],
-      "Verifying email address": [
+      "Syncing Address" : [
          null,
-         "Verìfico l'indirìsso email"
+         ""
       ],
-      "Communication Error": [
+      "Use a different email" : [
          null,
-         "Erô de comunicaçión"
+         ""
       ],
-      "Finishing Sign In...": [
+      "next" : [
          null,
-         "Finìscio de intrâ..."
+         ""
       ],
-      "In just a moment you'll be signed into BrowserID.": [
+      "Verifying email address" : [
          null,
-         "inte 'n moménto ti saiæ drénto o BrowserID."
+         ""
       ],
-      "Please wait a few seconds while we sign you into the site.": [
+      "Signup Failed" : [
          null,
-         "Pe favô aspêta quàrche segóndo fintànto che niâtri te fémmo intrâ into scîto."
+         ""
       ],
-      "We are sorry, this request is taking a LOOONG time.": [
+      "This email looks new, so let&apos;s get you set up." : [
          null,
-         "Sémmo despiaxûi, sta domànda sta pigiàndo davéi TRÒPPO ténpo."
+         ""
       ],
-      "This message will go away when the request completes (hopefully soon). If you wait too long, close this window and try again.": [
+      "Checking Script Version" : [
          null,
-         "Sta notìçia a spariâ quànde l'operaçión a saiâ finiâ (sperémmo fîto). Se ti t'aspêti da tànto ténpo, særa sto barcón e prêuva tórna."
+         ""
       ],
-      "Sign in using": [
+      "You are offline!" : [
          null,
-         "Ìntra con"
+         ""
       ],
-      "New email address": [
+      "Unfortunately, the email address provided cannot act as a Primary Identity Provider" : [
          null,
-         "Nêuvo indirìsso email"
+         ""
       ],
-      "This field must be an email address.": [
+      "Checking Authentication" : [
          null,
-         "Sto cànpo o dêve êse 'n'indirìsso email."
+         ""
       ],
-      "The email field is required.": [
+      "Getting Token Info" : [
          null,
-         "O cànpo da email o va inpîo."
+         ""
       ],
-      "We just sent an email to that address! If you really want to send another, wait a minute or two and try again.": [
+      "forgot your password?" : [
          null,
-         "Niâtri émmo mandòu 'na email a st'indirìsso! Se ti veu mandâne 'n'âtra, aspêta in menûto ò doî e prêuva tórna."
+         ""
       ],
-      "That address is already added to your account!": [
+      "Address Verified!" : [
          null,
-         "St'indirìsso email o l'é stæto azónto a-o teu account."
+         ""
       ],
-      "add": [
+      "This field must be an email address." : [
          null,
-         "azónzi"
+         ""
       ],
-      "cancel": [
+      "We are sorry, but we cannot communicate with BrowserID while you are offline." : [
          null,
-         "anùlla"
+         ""
       ],
-      "Email": [
+      "Authenticating User" : [
          null,
-         "Email"
+         ""
       ],
-      "Enter your email address to sign in to <strong>%s</strong>": [
+      "This email looks new, so let&#39;s get you set up." : [
          null,
-         "Scrîvi o teu indirìsso email chi pe intrâ into <strong>%s</strong>"
+         ""
       ],
-      "Welcome to BrowserID!": [
+      "Email" : [
          null,
-         "Benvegnûo into BrowserID!"
+         ""
       ],
-      "This email looks new, so let&#39;s get you set up.": [
+      "Setting Password" : [
          null,
-         "St'indirìsso email o pâ nêuvo, dónca provémmo a configorâlo."
+         ""
       ],
-      "Password": [
+      "Finishing Sign In..." : [
          null,
-         "Paròlla segrétta"
+         ""
       ],
-      "forgot your password?": [
+      "select email" : [
          null,
-         "T'æ ascordòu a teu paròlla segrétta?"
+         ""
       ],
-      "The password field is required.": [
+      "Checking Address Info" : [
          null,
-         "O cànpo da paròlla segrétta o va inpîo."
+         ""
       ],
-      "The account cannot be logged in with this username and password.": [
+      "Adding Primary Email Address to User" : [
          null,
-         "Paròlla segrétta ò nómme ùtente sbaliòu."
+         ""
       ],
-      "next": [
+      "Your identity has been verified with your email provider, we will now try to sign you in." : [
          null,
-         "pròscimo"
+         ""
       ],
-      "verify email": [
+      "Verify With Email Provider" : [
          null,
-         "verìfica email"
+         ""
       ],
-      "select email": [
+      "Checking Whether User is Authenticated with IdP" : [
          null,
-         "seleçionn-a email"
+         ""
       ],
-      "Cannot verify %s": [
+      "Updating password" : [
          null,
-         "No pòsso verificâ %s"
+         ""
       ],
-      "%s is a required address, but we cannot verify that you own this address.": [
+      "We just sent an email to that address!  If you really want to send another, wait a minute or two and try again." : [
          null,
-         "O %s o domànda l'indirìsso, ma niâtri no poémmo verificâ che st'indirìsso o ségge o teu."
+         ""
       ],
-      "Check your email!": [
+      "The password field is required." : [
          null,
-         "Contròlla a teu emal!"
+         ""
       ],
-      "We sent a confirmation email to <strong>%s</strong>": [
+      "cancel" : [
          null,
-         "Niâtri émmo mandòu 'na email de confèrma a <strong>%s</strong>"
+         ""
       ],
-      "To finish signing in just click the verify link we sent to your email address.": [
+      "We had trouble communicating with your email provider, please try again!" : [
          null,
-         "Pe finî l'iscriçión, sciàcca pe verifcâ o colegaménto ch'émmo mandòu a-o teu indirìsso email."
+         ""
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"cancel\">cancel</a>.": [
+      "Creating Account" : [
          null,
-         "Se l'é 'n erô, bàsta che ti ignòri sta email e <a href=\"#\" class=\"cancel\" id=\"back\">t'adêuvi 'n'âtro indirìsso email</a>."
+         ""
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"back\">use another email address</a>.": [
+      "We are sorry, this request is taking a LOOONG time." : [
          null,
-         "Se l'é 'n erô, bàsta che ti ignòri sta email e <a href=\"#\" class=\"cancel\" id=\"back\">t'adêuvi 'n'âtro indirìsso email</a>."
+         ""
       ],
-      "The site requested you sign in using": [
+      "We just sent an email to that address! If you really want to send another, wait a minute or two and try again." : [
          null,
-         "O scîto ol'à domandòu che quande t'ìntri t'ûzi"
+         ""
       ],
-      "Reset Password": [
+      "BrowserID requires your browser's cookies to be enabled to operate.  Please enable your browser's cookies and try again" : [
          null,
-         "Scancélla paròlla segrétta"
+         ""
       ],
-      "Cancel": [
+      "Checking Registration Token" : [
          null,
-         "Anùlla"
+         ""
       ],
-      "*%s* is not a valid email address!": [
+      "add" : [
          null,
-         "*%s* o no l'é 'n'indirìsso email vàlido!"
+         ""
       ],
-      "To continue, please close the window and enter a valid address.": [
+      "To continue, please close the window and enter a valid address." : [
          null,
-         "Pe continoâ særa o barcón e inserìsci 'n nêuvo indirìsso email ch'o vàdde bén."
+         ""
       ],
-      "We are sorry, but we cannot communicate with BrowserID while you are offline.": [
+      "Enter your email address to sign in to <strong>%s</strong>" : [
          null,
-         "Sémmo despiaxûi, ma niâtri no poémmo comunicâ co-o BrowserID fintànto che ti ê scolegòu."
+         ""
       ],
-      "This is not me...": [
+      "Establishing Relay" : [
          null,
-         "Sto chi no són mîga mi..."
+         ""
       ],
-      "Use a different email": [
+      "Signin Failed" : [
          null,
-         "Adêuvia 'n'âtra email"
+         ""
       ],
-      "Always sign in using this email": [
+      "Verify" : [
          null,
-         "Ìntra de lóngo con sta email"
+         ""
       ],
-      "sign in": [
+      "sign in" : [
          null,
-         "ìntra"
+         ""
       ],
-      "Address Verified!": [
+      "The account cannot be logged in with this username and password." : [
          null,
-         "Indirìsso verificòu!"
+         ""
       ],
-      "Your identity has been verified with your email provider, we will now try to sign you in.": [
+      "Welcome to BrowserID!" : [
          null,
-         "A teu identitæ a l'é stæta verificâ co-o fornitô da teu email, òua provémmo a fâte acêde."
+         ""
       ],
-      "You must sign in with your email provider to verify ownership of this address. This window will be redirected to": [
+      "If this is a mistake, just ignore the sent email and <a href=\"#\" class=\"cancelVerify\" id=\"back\">use another email address</a>." : [
          null,
-         "Pe confermâ a propietæ de st'indirìsso email ti dêvi acêde co-o teu fornitô da pòsta. Sto barcón saiâ indirisòu a"
+         ""
       ],
-      "Verify": [
+      "*%s* is not a valid email address!" : [
          null,
-         "Verìfica"
+         ""
       ],
-      "Verify With Email Provider": [
+      "Please wait a few seconds while we sign you into the site." : [
          null,
-         "Verìfica co-o fornitô da email"
-      ],
-      "#~ \"We just sent an email to that address!  If you really want to send \"#~ \"another, wait a minute or two and try again.\"": [
-         null,
-         "#~ \"Niâtri t'émmo mandòu 'na email a st'indirìsso! Se ti t'eu mandâne \"#~ \"'n'âtra, aspêta 'n menûto ò doî e prêuva tórna.\""
-      ],
-      "This email looks new, so let&apos;s get you set up.": [
-         null,
-         "Sta email a pâ nêuva, coscì làscite registrâ."
-      ],
-      "#~ \"To verify that you own <strong id='primary_email'>%s</strong>, you must \"#~ \"sign in with your provider.  This window will be redirected to\"": [
-         null,
-         "#~ \"Pe confermâ che l'indirìsso <strong id='primary_email'>%s</strong> o \"#~ \"ségge pròpio o teu, ti dêvi acêde co-o teu fornitô.   Sto barcón o saiâ \"#~ \"indirisòu a\""
-      ],
-      "translated text": [
-         null,
-         "Tésto tradûto"
+         ""
       ]
    }
 }

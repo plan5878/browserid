@@ -1,186 +1,181 @@
-;var json_locale_data = {
-   "messages": {
-      "": {
-         "Project-Id-Version": " PACKAGE VERSION",
-         "Report-Msgid-Bugs-To": " ",
-         "POT-Creation-Date": " 2012-02-03 11:43+0100",
-         "PO-Revision-Date": " 2012-02-04 14:36+0200",
-         "Last-Translator": " Pavel <jasnapaka@jasnapaka.com>",
-         "Language-Team": " LANGUAGE <LL@li.org>",
-         "Language": " cs",
-         "MIME-Version": " 1.0",
-         "Content-Type": " text/plain; charset=UTF-8",
-         "Content-Transfer-Encoding": " 8bit",
-         "Plural-Forms": " nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;",
-         "X-Generator": " Pootle 2.1.6"
+var json_locale_data = {
+   "messages" : {
+      "Error encountered trying to complete registration." : [
+         null,
+         ""
+      ],
+      "" : {
+         "MIME-Version" : " 1.0",
+         "X-Generator" : " Translate Toolkit 1.9.0",
+         "POT-Creation-Date" : " 2012-01-26 17:37-0800",
+         "Language" : " cs",
+         "Last-Translator" : " FULL NAME <EMAIL@ADDRESS>",
+         "Content-Type" : " text/plain; charset=UTF-8",
+         "PO-Revision-Date" : " YEAR-MO-DA HO:MI+ZONE",
+         "Language-Team" : " LANGUAGE <LL@li.org>",
+         "Content-Transfer-Encoding" : " 8bit",
+         "Report-Msgid-Bugs-To" : " ",
+         "Project-Id-Version" : " PACKAGE VERSION"
       },
-      "Complete Login to %s using BrowserID": [
+      "BrowserID" : [
          null,
-         "Dokončení přihlášení k %s pomocí BrowserID"
+         ""
       ],
-      "Error encountered while attempting to confirm your address. Have you previously verified this address?": [
+      "Verification password is required." : [
          null,
-         "Při pokusu o dokončení registrace nastala chyba. Neověřoval(a) jste dříve tuto adresu?"
+         ""
       ],
-      "Error encountered trying to complete registration.": [
+      "Finish signing into: " : [
          null,
-         "Při pokusu o dokončení registrace nastala chyba."
+         ""
       ],
-      "Finish signing into: ": [
+      "Your Email" : [
          null,
-         "Dokončení přihlášení k:"
+         ""
       ],
-      "Email Verification": [
+      "TOS" : [
          null,
-         "Ověření e-mailu"
+         ""
       ],
-      "Email Address": [
+      "Need Help?" : [
          null,
-         "E-mailová adresa"
+         ""
       ],
-      "Your Email": [
+      "BrowserID: %s" : [
          null,
-         "Váš e-mail"
+         ""
       ],
-      "New Password": [
+      "Error comunicating with server." : [
          null,
-         "Nové heslo"
+         ""
       ],
-      "Enter a Password": [
+      "Last step!" : [
          null,
-         "Vložte heslo"
+         ""
       ],
-      "Password is required.": [
+      "BrowserID is the fast and secure way to sign in &mdash; <a target=\"_blank\" href=\"/about\">learn more</a>" : [
          null,
-         "Heslo je vyžadováno."
+         ""
       ],
-      "Password must be between 8 and 80 characters long.": [
+      "Your new address is set up and you should now be signed in. You may now close this window and go back to" : [
          null,
-         "Délka hesla musí být v rozmezí 8 až 80 znaků."
+         ""
       ],
-      "Verify Password": [
+      "Verify Password" : [
          null,
-         "Ověření hesla"
+         ""
       ],
-      "Repeat Password": [
+      "BrowserID Home" : [
          null,
-         "Znovu heslo"
+         ""
       ],
-      "Verification password is required.": [
+      "Password must be between 8 and 80 characters long." : [
          null,
-         "Ověření hesla je vyžadováno."
+         ""
       ],
-      "Passwords do not match.": [
+      "(A better way to sign in)" : [
          null,
-         "Hesla si neodpovídají."
+         ""
       ],
-      "Finish": [
+      "Finish registration by clicking this link:" : [
          null,
-         "Dokončit"
+         ""
       ],
-      "<strong class=\"email\">Your address</strong> has been verified!": [
+      "Thanks," : [
          null,
-         "<strong class=\"email\">Vaše adresa</strong> byla ověřena!"
+         ""
       ],
-      "Your new address is set up and you should now be signed in. You may now close this window and go back to": [
+      "Developers" : [
          null,
-         "Nová adresa je nastavena a vy se nyní můžete přihlásit. Můžete toto okno zavřít a přejít zpět na"
+         ""
       ],
-      "Communicating with server": [
+      "Communicating with server" : [
          null,
-         "Probíhá komunikace se serverem"
+         ""
       ],
-      "Just a moment while we talk with the server.": [
+      "Enter a Password" : [
          null,
-         "Chviličku strpení. Probíhá komunikace se serverem."
+         ""
       ],
-      "BrowserID": [
+      "Error encountered while attempting to confirm your address. Have you previously verified this address?" : [
          null,
-         "BrowserID"
+         ""
       ],
-      "BrowserID is the fast and secure way to sign in &mdash; <a target=\"_blank\" href=\"/about\">learn more</a>": [
+      "Thank you for signing up with <strong>BrowserID</strong>. You can now use your <strong>BrowserID</strong> account to <em>Sign In</em> or <em>Sign Up</em> to websites all across the web!" : [
          null,
-         "BrowserID je rychlý a bezpečný způsob pro přihlašování &mdash; <a target=\"_blank\" href=\"/about\">dozvědět se více</a>"
+         ""
       ],
-      "BrowserID: %s": [
+      "Email Verification" : [
          null,
-         "BrowserID: %s"
+         ""
       ],
-      "BrowserID Home": [
+      "<strong class=\"email\">Your address</strong> has been verified!" : [
          null,
-         "Domovská stránka BrowserID"
+         ""
       ],
-      "How it works": [
+      "Sign In" : [
          null,
-         "Jak to funguje"
+         ""
       ],
-      "Developers": [
+      "Finish" : [
          null,
-         "Vývojáři"
+         ""
       ],
-      "Sign In": [
+      "Browser ID" : [
          null,
-         "Přihlášení"
+         ""
       ],
-      "Sign Out": [
+      "There was a problem with your signup link.  Has this address already been registered?" : [
          null,
-         "Odhlášení"
+         ""
       ],
-      "By the <a href=\"%s\" target=\"_blank\">Identity Team</a> @ <a href=\"%s\" target=\"_blank\">Mozilla Labs</a>": [
+      "Passwords do not match." : [
          null,
-         "Od <a href=\"%s\" target=\"_blank\">Identity Team</a> @ <a href=\"%s\" target=\"_blank\">Mozilla Labs</a>"
+         ""
       ],
-      "Privacy": [
+      "Password is required." : [
          null,
-         "Zásady ochrany soukromí"
+         ""
       ],
-      "TOS": [
+      "By the <a href=\"%s\" target=\"_blank\">Identity Team</a> @ <a href=\"%s\" target=\"_blank\">Mozilla Labs</a>" : [
          null,
-         "TOS"
+         ""
       ],
-      "Need Help?": [
+      "New Password" : [
          null,
-         "Potřebujete pomoci?"
+         ""
       ],
-      "There was a problem with your signup link. Has this address already been registered?": [
+      "Complete Login to %s using BrowserID" : [
          null,
-         "U přihlašovacího odkazu se vyskytl problém. Nebyla tato adresa již zaregistrována?"
+         ""
       ],
-      "Error comunicating with server.": [
+      "How it works" : [
          null,
-         "Chyba při komunikaci se serverem."
+         ""
       ],
-      "Last step!": [
+      "Privacy" : [
          null,
-         "Poslední krok!"
+         ""
       ],
-      "Thank you for signing up with <strong>BrowserID</strong>. You can now use your <strong>BrowserID</strong> account to <em>Sign In</em> or <em>Sign Up</em> to websites all across the web!": [
+      "Repeat Password" : [
          null,
-         "Děkujeme za přihlášení k <strong>BrowserID</strong>. Nyní můžete použít svůj účet <strong>BrowserID</strong> k <em>Přihlášení</em> či <em>Odhlášení</em> k webovým stránkám po celém světě!"
+         ""
       ],
-      "Thanks for verifying your email address. This message is being sent to you to complete your sign-in to %s.": [
+      "Just a moment while we talk with the server." : [
          null,
-         "Děkujeme za ověření vaší e-mailové adresy. Tato zpráva je vám zaslána z důvodu dokončení přihlášení k %s."
+         ""
       ],
-      "Finish registration by clicking this link:": [
+      "Email Address" : [
          null,
-         "Pro dokončení registrace klepněte na následující odkaz:"
+         ""
       ],
-      "If you are NOT trying to sign into this site, just ignore this email.": [
+      "Sign Out" : [
          null,
-         "Pokud se nepokoušel(a) přihlásit k uvedené stránce, jednoduše tento e-mail ignorujte."
+         ""
       ],
-      "Thanks,": [
+      "If you are NOT trying to sign into this site, just ignore this email." : [
          null,
-         "Děkujeme,"
-      ],
-      "(A better way to sign in)": [
-         null,
-         "(Lepší způsob přihlašování)"
-      ],
-      "Browser ID": [
-         null,
-         "Browser ID"
+         ""
       ]
    }
 }

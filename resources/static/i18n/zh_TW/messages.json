@@ -1,186 +1,182 @@
-;var json_locale_data = {
-   "messages": {
-      "": {
-         "Project-Id-Version": " PACKAGE VERSION",
-         "Report-Msgid-Bugs-To": " ",
-         "POT-Creation-Date": " 2012-02-03 11:43+0100",
-         "PO-Revision-Date": " 2012-02-03 13:36+0200",
-         "Last-Translator": " Peter <petercpg@mail.moztw.org>",
-         "Language-Team": " LANGUAGE <LL@li.org>",
-         "Language": " zh_TW",
-         "MIME-Version": " 1.0",
-         "Content-Type": " text/plain; charset=UTF-8",
-         "Content-Transfer-Encoding": " 8bit",
-         "Plural-Forms": " nplurals=1; plural=0;",
-         "X-Generator": " Pootle 2.1.6"
+var json_locale_data = {
+   "messages" : {
+      "Error encountered trying to complete registration." : [
+         null,
+         ""
+      ],
+      "" : {
+         "Plural-Forms" : " nplurals=1; plural=0;",
+         "MIME-Version" : " 1.0",
+         "X-Generator" : " Pootle 2.1.6",
+         "POT-Creation-Date" : " 2012-01-26 17:37-0800",
+         "Language" : " zh_TW",
+         "Last-Translator" : " Peter <petercpg@mail.moztw.org>",
+         "Content-Type" : " text/plain; charset=UTF-8",
+         "PO-Revision-Date" : " 2012-01-27 20:46+0200",
+         "Language-Team" : " LANGUAGE <LL@li.org>",
+         "Content-Transfer-Encoding" : " 8bit",
+         "Report-Msgid-Bugs-To" : " ",
+         "Project-Id-Version" : " PACKAGE VERSION"
       },
-      "Complete Login to %s using BrowserID": [
-         null,
-         "使用 BrowserID 登入至 %s"
-      ],
-      "Error encountered while attempting to confirm your address. Have you previously verified this address?": [
-         null,
-         "嘗試確認您的電子郵件地址時發生錯誤。您曾經驗證過這個地址嗎？"
-      ],
-      "Error encountered trying to complete registration.": [
-         null,
-         "嘗試完成註冊時發生錯誤。"
-      ],
-      "Finish signing into: ": [
-         null,
-         "完成登入至: "
-      ],
-      "Email Verification": [
-         null,
-         "電子郵件驗證"
-      ],
-      "Email Address": [
-         null,
-         "電子郵件地址"
-      ],
-      "Your Email": [
-         null,
-         "您的電子郵件地址"
-      ],
-      "New Password": [
-         null,
-         "新密碼"
-      ],
-      "Enter a Password": [
-         null,
-         "輸入一組密碼"
-      ],
-      "Password is required.": [
-         null,
-         "必須輸入密碼。"
-      ],
-      "Password must be between 8 and 80 characters long.": [
-         null,
-         "密碼長度必須在 8 到 80 個字元符號之間。"
-      ],
-      "Verify Password": [
-         null,
-         "驗證密碼"
-      ],
-      "Repeat Password": [
-         null,
-         "重新輸入密碼"
-      ],
-      "Verification password is required.": [
-         null,
-         "需要輸入兩次密碼。"
-      ],
-      "Passwords do not match.": [
-         null,
-         "輸入的密碼不相同。"
-      ],
-      "Finish": [
-         null,
-         "完成"
-      ],
-      "<strong class=\"email\">Your address</strong> has been verified!": [
-         null,
-         "已驗證 <strong class=\"email\">您的電子郵件地址</strong>！"
-      ],
-      "Your new address is set up and you should now be signed in. You may now close this window and go back to": [
-         null,
-         "您新的電子郵件地址已經設定完成，現在應該也已經登入了。您現在可以關閉此視窗並回到"
-      ],
-      "Communicating with server": [
-         null,
-         "正在與伺服器通訊"
-      ],
-      "Just a moment while we talk with the server.": [
-         null,
-         "我們正在連絡伺服器，請稍候。"
-      ],
-      "BrowserID": [
+      "BrowserID" : [
          null,
          "BrowserID"
       ],
-      "BrowserID is the fast and secure way to sign in &mdash; <a target=\"_blank\" href=\"/about\">learn more</a>": [
+      "Verification password is required." : [
          null,
-         "BrowserID 是個能讓您更快、更安全地登入網站的方式 &mdash; <a target=\"_blank\" href=\"/about\">了解更多資訊</a>"
+         "需要輸入兩次密碼。"
       ],
-      "BrowserID: %s": [
+      "Finish signing into: " : [
          null,
-         "BrowserID: %s"
+         ""
       ],
-      "BrowserID Home": [
+      "Your Email" : [
          null,
-         "BrowserID 首頁"
+         "您的電子郵件地址"
       ],
-      "How it works": [
-         null,
-         "技術原理"
-      ],
-      "Developers": [
-         null,
-         "開發者"
-      ],
-      "Sign In": [
-         null,
-         "登入"
-      ],
-      "Sign Out": [
-         null,
-         "登出"
-      ],
-      "By the <a href=\"%s\" target=\"_blank\">Identity Team</a> @ <a href=\"%s\" target=\"_blank\">Mozilla Labs</a>": [
-         null,
-         "由 <a href=\"%s\" target=\"_blank\">Mozilla Labs</a> 的 <a href=\"%s\" target=\"_blank\">Identity Team</a> 打造"
-      ],
-      "Privacy": [
-         null,
-         "隱私"
-      ],
-      "TOS": [
+      "TOS" : [
          null,
          "服務條款"
       ],
-      "Need Help?": [
+      "Need Help?" : [
          null,
          "需要幫助嗎？"
       ],
-      "There was a problem with your signup link. Has this address already been registered?": [
+      "BrowserID: %s" : [
          null,
-         "您的註冊鏈結有點問題。這個電子郵件地址註冊過了嗎？"
+         "BrowserID: %s"
       ],
-      "Error comunicating with server.": [
+      "Error comunicating with server." : [
          null,
-         "與伺服器通訊時發生錯誤。"
+         ""
       ],
-      "Last step!": [
+      "Last step!" : [
          null,
          "最後一步了！"
       ],
-      "Thank you for signing up with <strong>BrowserID</strong>. You can now use your <strong>BrowserID</strong> account to <em>Sign In</em> or <em>Sign Up</em> to websites all across the web!": [
+      "BrowserID is the fast and secure way to sign in &mdash; <a target=\"_blank\" href=\"/about\">learn more</a>" : [
          null,
-         "感謝您註冊 <strong>BrowserID</strong>。您現在可以使用 <strong>BrowserID</strong> 帳號以 <em>登入</em> 或 <em>註冊</em> 其他網站！"
+         ""
       ],
-      "Thanks for verifying your email address. This message is being sent to you to complete your sign-in to %s.": [
+      "Your new address is set up and you should now be signed in. You may now close this window and go back to" : [
          null,
-         "感謝您驗證您的電子郵件地址。該訊息已寄送給您以完成登入至 %s 的過程。"
+         ""
       ],
-      "Finish registration by clicking this link:": [
+      "Verify Password" : [
          null,
-         "請點下此鏈結完成註冊:"
+         "驗證密碼"
       ],
-      "If you are NOT trying to sign into this site, just ignore this email.": [
+      "BrowserID Home" : [
          null,
-         "若您沒有要登入該網站，請忽略此電子郵件。"
+         "BrowserID 首頁"
       ],
-      "Thanks,": [
+      "Password must be between 8 and 80 characters long." : [
          null,
-         "感謝您"
+         "密碼長度必須在 8 到 80 個字元符號之間。"
       ],
-      "(A better way to sign in)": [
+      "(A better way to sign in)" : [
          null,
          "（更好的登入機制）"
       ],
-      "Browser ID": [
+      "Finish registration by clicking this link:" : [
          null,
-         "Browser ID"
+         ""
+      ],
+      "Thanks," : [
+         null,
+         "感謝您"
+      ],
+      "Developers" : [
+         null,
+         "開發者"
+      ],
+      "Communicating with server" : [
+         null,
+         "正在聯絡伺服器"
+      ],
+      "Enter a Password" : [
+         null,
+         "輸入一組密碼"
+      ],
+      "Error encountered while attempting to confirm your address. Have you previously verified this address?" : [
+         null,
+         ""
+      ],
+      "Thank you for signing up with <strong>BrowserID</strong>. You can now use your <strong>BrowserID</strong> account to <em>Sign In</em> or <em>Sign Up</em> to websites all across the web!" : [
+         null,
+         ""
+      ],
+      "Email Verification" : [
+         null,
+         ""
+      ],
+      "<strong class=\"email\">Your address</strong> has been verified!" : [
+         null,
+         ""
+      ],
+      "Sign In" : [
+         null,
+         "登入"
+      ],
+      "Finish" : [
+         null,
+         "完成"
+      ],
+      "Browser ID" : [
+         null,
+         ""
+      ],
+      "There was a problem with your signup link.  Has this address already been registered?" : [
+         null,
+         ""
+      ],
+      "Passwords do not match." : [
+         null,
+         "輸入的密碼不相同。"
+      ],
+      "Password is required." : [
+         null,
+         "必須輸入密碼。"
+      ],
+      "By the <a href=\"%s\" target=\"_blank\">Identity Team</a> @ <a href=\"%s\" target=\"_blank\">Mozilla Labs</a>" : [
+         null,
+         ""
+      ],
+      "New Password" : [
+         null,
+         "新密碼"
+      ],
+      "Complete Login to %s using BrowserID" : [
+         null,
+         ""
+      ],
+      "How it works" : [
+         null,
+         "技術原理"
+      ],
+      "Privacy" : [
+         null,
+         "隱私"
+      ],
+      "Repeat Password" : [
+         null,
+         "重新輸入密碼"
+      ],
+      "Just a moment while we talk with the server." : [
+         null,
+         ""
+      ],
+      "Email Address" : [
+         null,
+         ""
+      ],
+      "Sign Out" : [
+         null,
+         "登出"
+      ],
+      "If you are NOT trying to sign into this site, just ignore this email." : [
+         null,
+         ""
       ]
    }
 }

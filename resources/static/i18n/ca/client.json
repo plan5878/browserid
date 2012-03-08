@@ -1,362 +1,365 @@
-;var json_locale_data = {
-   "client": {
-      "": {
-         "Project-Id-Version": " PACKAGE VERSION",
-         "Report-Msgid-Bugs-To": " ",
-         "POT-Creation-Date": " 2012-02-03 11:43+0100",
-         "PO-Revision-Date": " 2012-02-04 17:46+0200",
-         "Last-Translator": " Eduard <edu@eduard-gamonal.net>",
-         "Language-Team": " LANGUAGE <LL@li.org>",
-         "Language": " ca",
-         "MIME-Version": " 1.0",
-         "Content-Type": " text/plain; charset=UTF-8",
-         "Content-Transfer-Encoding": " 8bit",
-         "Plural-Forms": " nplurals=2; plural=(n != 1);",
-         "X-Generator": " Pootle 2.1.6"
+var json_locale_data = {
+   "client" : {
+      "Cancelling User Account" : [
+         null,
+         ""
+      ],
+      "" : {
+         "MIME-Version" : " 1.0",
+         "X-Generator" : " Translate Toolkit 1.9.0",
+         "POT-Creation-Date" : " 2012-01-26 17:37-0800",
+         "Language" : " ca",
+         "Last-Translator" : " FULL NAME <EMAIL@ADDRESS>",
+         "Content-Type" : " text/plain; charset=UTF-8",
+         "PO-Revision-Date" : " YEAR-MO-DA HO:MI+ZONE",
+         "Language-Team" : " LANGUAGE <LL@li.org>",
+         "Content-Transfer-Encoding" : " 8bit",
+         "Report-Msgid-Bugs-To" : " ",
+         "Project-Id-Version" : " PACKAGE VERSION"
       },
-      "Authenticating User": [
+      "Always sign in using this email" : [
          null,
-         "S'està autenticant l'usuari"
+         ""
       ],
-      "Adding Address": [
+      "Sync Keys for Address" : [
          null,
-         "S'està afegint l'adreça"
+         ""
       ],
-      "Adding Primary Email Address to User": [
+      "Syncing Email Addresses" : [
          null,
-         "S'està afegint l'adreça principal de correu electrònic a l'usuari"
+         ""
       ],
-      "Checking Address Info": [
+      "Unfortunately, BrowserID cannot communicate while offline!" : [
          null,
-         "S'estan comprovant ĺes dades de l'adreça"
+         ""
       ],
-      "Authenticating with Assertion": [
+      "Sign in using" : [
          null,
-         "Autenticació amb asserció"
+         ""
       ],
-      "Cancelling User Account": [
+      "Relay frame could not be found" : [
          null,
-         "S'està cancel·lant el compte de l'usuari"
+         ""
       ],
-      "Checking Authentication": [
+      "Password" : [
          null,
-         "S'està comprovant l'autenticació"
+         ""
       ],
-      "Checking Script Version": [
+      "We sent a confirmation email to <strong>%s</strong>" : [
          null,
-         "S'està comprovant la versió de l'script"
+         ""
       ],
-      "Completing User Registration": [
+      "To finish signing in just click the verify link we sent to your email address." : [
          null,
-         "S'està finalitzant el registre de l'usuari"
+         ""
       ],
-      "We are sorry, BrowserID requires cookies": [
+      "Cancel" : [
          null,
-         "Disculpeu. El BrowserID requereix l'utilització de galetes"
+         ""
       ],
-      "BrowserID requires your browser's cookies to be enabled to operate.  Please enable your browser's cookies and try again": [
+      "To verify that you own <strong id='primary_email'>%s</strong>, you must sign in with your provider.  This window will be redirected to" : [
          null,
-         "Per operar el BrowserID necessita que el vostre navegador tingui habilitades les galetes.  Habiliteu-les i torneu a provar-ho."
+         ""
       ],
-      "Checking if Cookies are Enabled": [
+      "Authenticating with Assertion" : [
          null,
-         "S'està comprovant si les galetes estan habilitades"
+         ""
       ],
-      "Creating Account": [
+      "Reset Password" : [
          null,
-         "S'està creant el compte"
+         ""
       ],
-      "Getting Assertion": [
+      "Resetting Password" : [
          null,
-         "S'està comprovant l'asserció"
+         ""
       ],
-      "Checking Registration Token": [
+      "Logout Failed" : [
          null,
-         "S'està comprovant el testimoni de registre"
+         ""
       ],
-      "Checking Email Address": [
+      "Checking Email Address" : [
          null,
-         "Comprovació de l'adreça electrònica"
+         ""
       ],
-      "Checking Whether User is Authenticated with IdP": [
+      "To verify that you own this address, you must sign in with your provider.  This window will be redirected to" : [
          null,
-         "Comprovació de si l'usuari s'està autenticant amb IdP"
+         ""
       ],
-      "Logout Failed": [
+      "This is not me..." : [
          null,
-         "Ha fallat la sortida de sessió"
+         ""
       ],
-      "You are offline!": [
+      "We are sorry, BrowserID requires cookies" : [
          null,
-         "No esteu connectat"
+         ""
       ],
-      "Unfortunately, BrowserID cannot communicate while offline!": [
+      "In just a moment you'll be signed into BrowserID." : [
          null,
-         "El BrowserID no es pot comunicar si esteu connectat."
+         ""
       ],
-      "Authenticating with Identity Provider": [
+      "Getting Assertion" : [
          null,
-         "S'està autenticant amb el proveïdor d'identitat"
+         ""
       ],
-      "We had trouble communicating with your email provider, please try again!": [
+      "Completing User Registration" : [
          null,
-         "Tenim problemes per comunicar-nos amb el vostre proveïdor de correu. Torneu a provar-ho."
+         ""
       ],
-      "Provisioning with Identity Provider": [
+      "Registration Failed" : [
          null,
-         "S'està comprovant el proveïdor d'identitat"
+         ""
       ],
-      "Provisioning Unsupported Identity Provider": [
+      "This message will go away when the request completes (hopefully soon).  If you wait too long, close this window and try again." : [
          null,
-         "S'està provant un proveïdor d'identitat incompatible"
+         ""
       ],
-      "Unfortunately, the email address provided cannot act as a Primary Identity Provider": [
+      "translated text" : [
          null,
-         "Desafortunadament, l'adreça electrònica que heu indicat no pot actuar com a proveïdor d'identitat primari."
+         ""
       ],
-      "Registration Failed": [
+      "The email field is required." : [
          null,
-         "Ha fallat el registre"
+         ""
       ],
-      "Establishing Relay": [
+      "New email address" : [
          null,
-         "S'està establint la comunicació"
+         ""
       ],
-      "Relay frame could not be found": [
+      "verify email" : [
          null,
-         "No s'ha pogut trobar el marc de comunicacions"
+         ""
       ],
-      "Resetting Password": [
+      "Checking if Cookies are Enabled" : [
          null,
-         "S'està reiniciant la contrasenya"
+         ""
       ],
-      "Remove Email Address from Account": [
+      "Provisioning Unsupported Identity Provider" : [
          null,
-         "S'està suprimint l'adreça electrònica del compte"
+         ""
       ],
-      "Setting Password": [
+      "That address is already added to your account!" : [
          null,
-         "S'està establint la contrasenya"
+         ""
       ],
-      "Signin Failed": [
+      "Authenticating with Identity Provider" : [
          null,
-         "Ha fallat l'inici de sessió"
+         ""
       ],
-      "Signup Failed": [
+      "Remove Email Address from Account" : [
          null,
-         "Ha fallat el registre de l'usuari"
+         ""
       ],
-      "Syncing Address": [
+      "Communication Error" : [
          null,
-         "S'estan sincronitzant les adreces"
+         ""
       ],
-      "Syncing Email Addresses": [
+      "Provisioning with Identity Provider" : [
          null,
-         "S'estan sincronitzant les adreces electròniques"
+         ""
       ],
-      "Sync Keys for Address": [
+      "Adding Address" : [
          null,
-         "Sincronitza les claus per l'adreça"
+         ""
       ],
-      "Getting Token Info": [
+      "Check your email!" : [
          null,
-         "S'està obtenint informació del testimoni"
+         ""
       ],
-      "Updating password": [
+      "The site requested you sign in using" : [
          null,
-         "S'està actualitzant la contrasenya"
+         ""
       ],
-      "Verifying email address": [
+      "Syncing Address" : [
          null,
-         "S'està validant l'adreça electrònica"
+         ""
       ],
-      "Communication Error": [
+      "Use a different email" : [
          null,
-         "S'ha produït un error en la comunicació"
+         ""
       ],
-      "Finishing Sign In...": [
+      "next" : [
          null,
-         "S'està acabant l'inici de sessió..."
+         ""
       ],
-      "In just a moment you'll be signed into BrowserID.": [
+      "Verifying email address" : [
          null,
-         "En un moment haureu iniciat la sessió al BrowserID."
+         ""
       ],
-      "Please wait a few seconds while we sign you into the site.": [
+      "Signup Failed" : [
          null,
-         "Espereu uns segons mentre iniciem la sessió al lloc."
+         ""
       ],
-      "We are sorry, this request is taking a LOOONG time.": [
+      "This email looks new, so let&apos;s get you set up." : [
          null,
-         "Lamentem que la petició tardi tanta estona."
+         ""
       ],
-      "This message will go away when the request completes (hopefully soon). If you wait too long, close this window and try again.": [
+      "Checking Script Version" : [
          null,
-         "Aquest missatge marxarà quan s'hagi acabat la sol·licitud. En cas que tardi massa, tanqueu aquesta finestra i torneu a provar-ho."
+         ""
       ],
-      "Sign in using": [
+      "You are offline!" : [
          null,
-         "Inicieu una sessió utilitzant"
+         ""
       ],
-      "New email address": [
+      "Unfortunately, the email address provided cannot act as a Primary Identity Provider" : [
          null,
-         "Nova adreça de correu electrònic"
+         ""
       ],
-      "This field must be an email address.": [
+      "Checking Authentication" : [
          null,
-         "El camp cal que contingui una adreça electrònica."
+         ""
       ],
-      "The email field is required.": [
+      "Getting Token Info" : [
          null,
-         "El camp d'adreça electrònica és obligatori."
+         ""
       ],
-      "We just sent an email to that address! If you really want to send another, wait a minute or two and try again.": [
+      "forgot your password?" : [
          null,
-         "Acabem d'enviar un correu a aquesta adreça! Si realment en voleu enviar un altre, espereu un minut o dos i torneu-ho a provar."
+         ""
       ],
-      "That address is already added to your account!": [
+      "Address Verified!" : [
          null,
-         "Ja heu afegit aquesta adreça al vostre compte."
+         ""
       ],
-      "add": [
+      "This field must be an email address." : [
          null,
-         "afegeix"
+         ""
       ],
-      "cancel": [
+      "We are sorry, but we cannot communicate with BrowserID while you are offline." : [
          null,
-         "cancel·la"
+         ""
       ],
-      "Email": [
+      "Authenticating User" : [
          null,
-         "Adreça electrònica"
+         ""
       ],
-      "Enter your email address to sign in to <strong>%s</strong>": [
+      "This email looks new, so let&#39;s get you set up." : [
          null,
-         "Introduïu la vostra adreça de correu electrònic per registrar-vos a <strong>%s</strong>"
+         ""
       ],
-      "Welcome to BrowserID!": [
+      "Email" : [
          null,
-         "Benvinguts al BrowserID!"
+         ""
       ],
-      "This email looks new, so let&#39;s get you set up.": [
+      "Setting Password" : [
          null,
-         "Aquesta adreça electrònica sembla nova. Configurem el vostre compte."
+         ""
       ],
-      "Password": [
+      "Finishing Sign In..." : [
          null,
-         "Contrasenya"
+         ""
       ],
-      "forgot your password?": [
+      "select email" : [
          null,
-         "heu oblidat la contrasenya?"
+         ""
       ],
-      "The password field is required.": [
+      "Checking Address Info" : [
          null,
-         "El camp de contrasenya és obligatori."
+         ""
       ],
-      "The account cannot be logged in with this username and password.": [
+      "Adding Primary Email Address to User" : [
          null,
-         "No es pot iniciar una sessió al compte amb aquest nom d'usuari i contrasenya."
+         ""
       ],
-      "next": [
+      "Your identity has been verified with your email provider, we will now try to sign you in." : [
          null,
-         "següent"
+         ""
       ],
-      "verify email": [
+      "Verify With Email Provider" : [
          null,
-         "verifiqueu l'adreça electrònica"
+         ""
       ],
-      "select email": [
+      "Checking Whether User is Authenticated with IdP" : [
          null,
-         "seleccioneu l'adreça electrònica"
+         ""
       ],
-      "Cannot verify %s": [
+      "Updating password" : [
          null,
-         "No s'ha pogut verificar %s"
+         ""
       ],
-      "%s is a required address, but we cannot verify that you own this address.": [
+      "We just sent an email to that address!  If you really want to send another, wait a minute or two and try again." : [
          null,
-         "%s és una adreça obligatòria però no podem verificar que en sigueu el propietari."
+         ""
       ],
-      "Check your email!": [
+      "The password field is required." : [
          null,
-         "Comproveu el vostre correu!"
+         ""
       ],
-      "We sent a confirmation email to <strong>%s</strong>": [
+      "cancel" : [
          null,
-         "Hem enviat un missatge de confirmació a <strong>%s</strong>"
+         ""
       ],
-      "To finish signing in just click the verify link we sent to your email address.": [
+      "We had trouble communicating with your email provider, please try again!" : [
          null,
-         "Per finalitzar l'inici de sessió, simplement feu clic a l'enllaç de verificació que us vam enviar per correu electrònic."
+         ""
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"cancel\">cancel</a>.": [
+      "Creating Account" : [
          null,
-         "Si això és un error, ignoreu el correu enviat i <a href=\"#\" id=\"cancel\">cancel·leu-ho</a>."
+         ""
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"back\">use another email address</a>.": [
+      "We are sorry, this request is taking a LOOONG time." : [
          null,
-         "Si això és un error, ignoreu el correu enviat i <a href=\"#\" id=\"back\">utilitzeu una altra adreça electrònica</a>."
+         ""
       ],
-      "The site requested you sign in using": [
+      "We just sent an email to that address! If you really want to send another, wait a minute or two and try again." : [
          null,
-         "El lloc ha sol·licitat que inicieu una sessió utilitzant"
+         ""
       ],
-      "Reset Password": [
+      "BrowserID requires your browser's cookies to be enabled to operate.  Please enable your browser's cookies and try again" : [
          null,
-         "Reinicia la contrasenya"
+         ""
       ],
-      "Cancel": [
+      "Checking Registration Token" : [
          null,
-         "Cancel·la"
+         ""
       ],
-      "*%s* is not a valid email address!": [
+      "add" : [
          null,
-         "*%s* no és una adreça de correu electrònic vàlida"
+         ""
       ],
-      "To continue, please close the window and enter a valid address.": [
+      "To continue, please close the window and enter a valid address." : [
          null,
-         "Per continuar, tanqueu la finestra i introduïu una adreça vàlida."
+         ""
       ],
-      "We are sorry, but we cannot communicate with BrowserID while you are offline.": [
+      "Enter your email address to sign in to <strong>%s</strong>" : [
          null,
-         "No podem comunicar-nos amb el BrowserID quan esteu desconnectat."
+         ""
       ],
-      "This is not me...": [
+      "Establishing Relay" : [
          null,
-         "No sóc jo..."
+         ""
       ],
-      "Use a different email": [
+      "Signin Failed" : [
          null,
-         "Utilitzeu una adreça electrònica diferent"
+         ""
       ],
-      "Always sign in using this email": [
+      "Verify" : [
          null,
-         "Inicieu una sessió sempre amb aquesta adreça electrònica"
+         ""
       ],
-      "sign in": [
+      "sign in" : [
          null,
-         "inici de sessió"
+         ""
       ],
-      "Address Verified!": [
+      "The account cannot be logged in with this username and password." : [
          null,
-         "S'ha verificat l'adreça."
+         ""
       ],
-      "Your identity has been verified with your email provider, we will now try to sign you in.": [
+      "Welcome to BrowserID!" : [
          null,
-         "S'ha verificat la vostra identitat amb el proveïdor de correu electrònic. Ara intentarem iniciar la sessió."
+         ""
       ],
-      "You must sign in with your email provider to verify ownership of this address. This window will be redirected to": [
+      "If this is a mistake, just ignore the sent email and <a href=\"#\" class=\"cancelVerify\" id=\"back\">use another email address</a>." : [
          null,
-         "Cal que inicieu la sessió amb el vostre proveïdor de correu electrònic per verificar que aquesta adreça és vostra. Aquesta finestra serà redirigida a"
+         ""
       ],
-      "Verify": [
+      "*%s* is not a valid email address!" : [
          null,
-         "Comprova"
+         ""
       ],
-      "Verify With Email Provider": [
+      "Please wait a few seconds while we sign you into the site." : [
          null,
-         "Comprova amb el proveïdor de correu electrònic"
+         ""
       ]
    }
 }
